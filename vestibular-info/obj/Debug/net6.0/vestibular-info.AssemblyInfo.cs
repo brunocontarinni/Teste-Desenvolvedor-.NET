@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vestibular-info")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d37637ed95171f29f8ea95618ca0d29f15935e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15d978631f771f89a265ab9a962042eb47db983b")]
 [assembly: System.Reflection.AssemblyProductAttribute("vestibular-info")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vestibular-info")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
