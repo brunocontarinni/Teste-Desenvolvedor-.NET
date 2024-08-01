@@ -1,0 +1,6 @@
+@SistemaCRM_HostAddress = http://localhost:5263
+
+GET {{SistemaCRM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

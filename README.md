@@ -1,77 +1,87 @@
 # Teste Desenvolvedor .NET
 
-![Aiko](imagens/logocrm.png)
-
-Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .NET.
+Neste repositório está os arquivos desenvolvidos para avaliação da CRM Educacional.
 
 ## O Desafio
 
-O desafio é criar um servidor que provê uma API com o objetivo de fornecer informações sobre Inscrições de candidatos de um vestibular
+Criar um servidor que provê uma API com o objetivo de fornecer informações sobre Inscrições de candidatos de um vestibular.
 
-## Requisitos
+## Back-End
 
-Esses requisitos são obrigatórios e devem ser desenvolvidos para a entrega do teste
+Abaixo as Tecnologias e FrameWorks utilizado para desenvolvimento da API.
 
-### CRUD
+* Linguagem: C# utilizando o .NET 6 (p .NET 5 não há mais suporte para o mesmo);
 
-Implementar as operações de **criação (POST)**, **consulta (GET)** (Por Id e GetAll), **atualização (PUT)** e **exclusão (DELETE)** de todas as entidades do seguinte diagrama:
+* Banco de Dados: MySQL através do Workbench;
 
-!['D](imagens/backend_diagrama.png)
+* Mapeamento objeto-relacional (ORM): EntityFramework, para facilitar a comunicação com o banco de dados;
 
-### Métodos
+* Swagger: Para disponibilização da API;
 
-Após implementar o CRUD para as entidades, implemente os seguintes métodos:
+## Front-End
 
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF.
+Abaixo as Tecnologias e FrameWorks utilizado para desenvolvimento da API.
 
-* `Inscrições por Oferta`: Recebe o identificador de uma oferta e retorna as inscrições associados aquela oferta.
+* Linguagem: C# utilizando o Asp.NET;
 
-## O que é permitido
+* Boodstraap;
 
-* Linguagem C#
+* Jquery;
 
-* .NET Framework ou .NET Core ou .NET 5
-
-* PostgreSQL, MySQL, Oracle, etc
-
-* Mapeamento objeto-relacional (ORM)
-
-* Qualquer tecnologia complementar as citadas anteriormente são permitidas desde que seu uso seja justificável
-
-## O que não é permitido
-
-* Bancos de Dados **não relacionais**.
+* DataTabled;
   
-* Utilizar bibliotecas ou códigos de terceiros que implementem algum dos requisitos.
+* Datapicker;
 
-* Outras linguagens diferentes de C#
+* Font-Awesome
+  
+## Utilização
 
-## Recomendações
-* O teste é propositalmente simples para permitir que você demostre suas habilidades e conhecimentos sem escrever muito código, sendo assim é interessante utilizar design patters e padrões de arquitetura.
-* **Linter**: Desenvolva o projeto utilizando algum padrão de formatação de código.
+1. No diretório raiz deste projeto, encontra-se uma pasta chamada "bd", nela se enconta o arquivo dump contendo toda a estrutura do banco de dados que será utilizado para executar a aplicação.
+   
+   ![Imagem 1](imagens/banco_1.png)
+   ![Imagem 2](imagens/banco_2.png)
+   ![Imagem 3](imagens/banco_3.png)
 
-## Extras
+2. O banco de dados utilizado se chama "bd_crm", caso deseja alterar, altere nos seguintes lugares:
 
-Aqui são listados algumas sugestões para você que quer ir além do desafio inicial. Lembrando que você não precisa se limitar a essas sugestões, se tiver pensado em outra funcionalidade que considera relevante ao escopo da aplicação fique à vontade para implementá-la.
+   * Arquivo dump;
+     
+   ![Imagem 5](imagens/banco_5.png)
+   
+   * A string de conexão localizada no arquivo json da aplicação;
+     
+   ![Imagem 4](imagens/banco_4.png)
 
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF, juntamente com dados imporrtantes para identificar de qual processo seletivo cada uma pertence.
+3. No diretório raiz deste projeto, encontra-se uma pasta chamada "projeto", nela se enconta o arquivo da aplicação em si;
 
-* **Documentação**: Gerar a documentação da API de forma automatizada, utilizando o `swagger` ou equivalentes
+   ![Imagem 1](imagens/pro_01.png)
 
-* **Containerização**: Realizar a conteinerização da aplicação utilizando Docker
+   ![Imagem 1](imagens/pro_02.png)
 
-* **Front-end da aplicação**: Se seu foco é ser fullstack, você pode explorar isso desenvolvendo um front-end para a aplicação, seja em tecnologia .NET (MVC, Razor, Blazor) ou javacript (VueJS, Angular, ReactJS, etc.)
+4. Para executar aplicação, basta utilizar a opção "Depurar-> Iniciar Depuração";
 
+   ![Imagem 1](imagens/app_01.png)
+
+4. Para verificação da API, basta selecionar a opeção "Swagger";
+   
+   ![Imagem 2](imagens/app_02.png)
+
+   ![Imagem 3](imagens/app_03.png)
+
+5. Para verificação da utilização da API, basta utilizar alguma das opções disponibilizadas;
+   
+   ![Imagem 4](imagens/app_04.png)
+
+6. Abaixo o link doo vídeo com o detalhe do desenvolvimento. Devido ao selo de não verificado do YouTube, apenas posso subir vídeos de 15 m cada. Com isso, o vídeo foi divido em duas partes;
+
+   * <a href="https://youtu.be/EJplvIq12eg" targent="_blanck">YouTube - Parte 1</a>
+   
+   * <a href="https://youtu.be/J6cV_eft2uQ" targent="_blanck">YouTube - Parte 2</a>
+   
 ## Entregas
 
 Para realizar a entrega do teste você deve:
 
-* Relizar o fork e clonar esse repositório para sua máquina
-  
-* Criar uma branch com o nome de `teste/[SEU NOME]`
-  * `[SEU NOME]`: Seu nome
-  * Exemplo: `teste/fulano-da-silva`;
-  
 * Faça um commit da sua branch com a implementação do teste
   
 * Realize o pull request da sua branch nesse repositório

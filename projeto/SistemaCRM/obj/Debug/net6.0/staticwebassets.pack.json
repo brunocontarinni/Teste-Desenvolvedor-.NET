@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\AUTHORS.txt",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\AUTHORS.txt"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\external\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\external\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_777620_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_777620_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_777777_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_777777_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_cc0000_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_cc0000_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\images\\ui-icons_ffffff_256x240.png",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\images\\ui-icons_ffffff_256x240.png"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\index.html",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.structure.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.structure.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.structure.min.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.structure.min.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.theme.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.theme.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\jquery-ui.theme.min.css",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\jquery-ui.theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\jquery-ui-1.13.3\\package.json",
+      "PackagePath": "staticwebassets\\js\\jquery-ui-1.13.3\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\wwwroot\\js\\moment\\moment.js",
+      "PackagePath": "staticwebassets\\js\\moment\\moment.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.API_CRM.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.API_CRM.props",
+      "PackagePath": "build\\API_CRM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.API_CRM.props",
+      "PackagePath": "buildMultiTargeting\\API_CRM.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.API_CRM.props",
+      "PackagePath": "buildTransitive\\API_CRM.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
