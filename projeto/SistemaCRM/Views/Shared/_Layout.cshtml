@@ -1,0 +1,155 @@
+﻿@{
+
+    string MenuSelected = (string)ViewData["titulo"];
+
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- JQuery UI -->
+        <link href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+        
+        <!-- Datatables -->
+        <link href="https://cdn.datatables.net/2.1.2/css/dataTables.dataTables.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Datepicker -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Font-Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>@MenuSelected</title>
+
+    </head>
+
+    <script type="text/javascript">
+
+        function toData(data) {
+
+            var mResult = '';
+
+            try {
+
+                var mData = data.split("/");
+                    mResult= mData[2] + "-" + mData[1] + "-" + mData[0];
+
+            } catch (Error) {
+
+            }
+
+            return mResult;
+
+        }
+                
+        function fromData(data) {
+
+            var mResult = '';
+
+            try {
+
+                var mData = data.split("-");
+                mResult = mData[2].substring(0, 2) + "/" + mData[1] + "/" + mData[0];
+
+            } catch (Error) {
+
+            }
+
+            return mResult;
+
+        }
+
+        @RenderSection("PreScript")
+
+    </script>
+
+    <body>
+
+        <div class="container container-fluid">
+
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="Index">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link @(MenuSelected == "Processo" ? "active" : "")" aria-current="page" href="Processo">Processo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(MenuSelected == "Curso" ? "active" : "")" aria-current="page" href="Curso">Curso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(MenuSelected == "Candidato" ? "active" : "")" aria-current="page" href="Candidato">Candidato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link @(MenuSelected == "Inscrição" ? "active" : "")" aria-current="page" href="Inscricao">Inscrição</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="swagger" target="_blank">Swagger</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+            <h1>@MenuSelected</h1>
+
+            @RenderBody()
+    
+
+        </div>
+
+        <!-- Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- JQuery UI -->
+        <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+
+        <!-- Datatables -->
+        <script src="https://cdn.datatables.net/2.1.2/js/dataTables.min.js" type="text/javascript"></script>
+
+        <!-- DatePicker -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script type="text/javascript">
+
+            try {
+
+                $(document).ready(function () {
+                
+                    @RenderSection("PosScript")
+
+                    $('.datepicker').datepicker({
+                        format: 'dd/mm/yyyy'
+                    });
+
+                });
+
+     
+            }catch (Error) {
+
+                alert(Error);
+
+            }
+
+        </script>
+
+    </body>
+
+
+</html>

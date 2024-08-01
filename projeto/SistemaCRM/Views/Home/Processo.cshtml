@@ -1,0 +1,486 @@
+﻿@page
+@model API_CRM.Views.Home.ProcessoModel
+@{
+
+    Layout = "_Layout";
+    
+}
+
+@section PreScript {
+
+    function refreshData(){
+
+        try{
+
+            var vPesquisa = "";
+             
+            $('#tblConsulta').DataTable().destroy();
+
+		    //Configuração da tabela
+            $('#tblConsulta').DataTable({
+
+                'destroy': true,
+                'processing': true,//Mostra o texto de processando ao ser carregado novos dados
+                'serverMethod': 'GET', //Método de envio do pedido
+                'searching' : false, //Desabilita a opção de pesquisa da tabela
+                'stateSave': true,
+                'ajax': {
+
+                    'url': "http://" + window.location.host + "/api/Processo",//Url de busca
+                    'contentType': "application/json; charset=utf-8",
+                    'dataSrc': '',
+                    /*success: function(data) { alert(JSON.stringify(data)); },*/
+                    error: function (request, status, erro) {
+                        
+                        alert("Problema ocorrido: " + status + "\nDescição: " + erro + "\nInterno: " + request.responseText);
+
+                    }//Mensagem de erro da busca de dados
+
+                },
+                'columns': [
+                    {
+                        "data": 'id_processo',
+                        render: function (data) {
+                            return "" +
+                                "<div class='custom-control'>" +
+                                        "<input class='custom-control-input btn-lg' type='checkbox' meta-data='" + data + "'>" +                                        
+                                    " </div>";
+                        }
+                    },
+                    {
+                        "data": 'id_processo',                                    
+                        render: function (data) {
+                        
+                            return '<div meta-data="codigo">' + data + '</div>';
+
+                        }
+
+                    },
+                    {"data": 'nom_processo'},
+                    {
+                        "data": 'dt_inicio',
+                        render: function (data) {
+
+                            return fromData(data);
+
+                        }
+
+                    },
+                    {
+                        "data": 'dt_termino',
+                        render: function (data) {
+
+                            return fromData(data);
+
+                        }
+
+                    }
+
+                ],
+                'columnDefs': [
+                    
+                    {"targets": 0, "width": "5%"},
+                    {"targets": 1, "width": "5%"},
+                    {"targets": 2, "width": "20%"},
+                    {"targets": 3, "width": "20%"},
+                    {"targets": 4, "width": "20%"}
+
+                ],//Configuração dos tamanho da coluna
+                'aaSorting': [[2,'asc']],
+                "language": {
+
+                    "url": "https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
+                                        
+                }//Configuração da linguagem da tabela
+                
+            });
+
+            
+
+
+        }catch (Error) {
+
+            alert(Error);
+
+        }
+
+    }
+
+}
+
+<div class="card o-hidden border-0 shadow-lg justify-content-center">
+
+    <div class="card-header">
+
+        <button class="btn btn-circle btn-success"
+            href="#" 
+            "title="Incluir registro."
+            id="btnIncluir">
+
+            Incluir
+        </button>
+        
+        <button class="btn btn-circle btn-warning"
+            href="#" 
+            "title="Editar registro."
+            id="btnEditar">
+
+            Editar
+        </button>
+        
+        <button class="btn btn-circle btn-danger"
+            href="#" 
+            "title="Excluir registro."
+            id="btnExCluir">
+
+            Excluir
+        </button>
+
+    </div>
+
+    <div class="card-body">
+
+        <div class="row justify-content-center">
+
+            <div class="w-100">
+
+                <table class="table table-striped table-hover table-condensed table-responsive display"
+                       id="tblConsulta">
+
+                    <thead>
+
+                        <tr>
+
+                            <td>#</td>
+                            <td>ID</td>
+                            <td>Nome</td>
+                            <td>Início</td>
+                            <td>Término</td>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" 
+        id="divModal" 
+        tabindex="-1" 
+        aria-hidden="true"
+    >
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><span id="tituloModal"></span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="col-12"
+                          id="formCadastro">
+                        
+                        <input type="hidden" id="codigo" value="0" />
+
+                        <div class="row">
+
+                            <div class="mb-3">
+
+                                <label for="nome" class="col-form-label">Nome:</label>
+                                <input type="text" class="form-control" id="nome" required />
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="mb-6">
+
+                                <label for="dataInicio" class="col-form-label">Início:</label>
+                                <input type="text" class="form-control datepicker" id="dataInicio" required />
+
+                            </div>
+
+                            <div class="mb-6">
+
+                                <label for="dataTermino" class="col-form-label">Término:</label>
+                                <input type="text" class="form-control datepicker" id="dataTermino" required />
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                            <input type="submit" id="btnEnviar" class="btn btn-success" value="Gravar" form="formCadastro" />
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade"
+         id="divModalExcluir"
+         tabindex="-1"
+         aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Processo</span></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="col-12"
+                          id="formExcluir">
+
+                        <input type="hidden" id="codigoExcluir" value="0" />
+
+                        Deseja exluir o processo <span id="tituloExcluir"></span>?
+
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Não</button>
+                            <input type="submit" id='btnEnviarExcluir' class="btn btn-success" value="Sim" form="formExcluir" />
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+@section PosScript {
+
+    refreshData();
+
+    $('#btnIncluir').click(function(){
+
+				$("#tituloModal").text("Cadastrar Processo");
+
+				$("#codigo").val("0");
+				$("#nome").val("");
+				$("#dataInicio").val("");
+				$("#dataTermino").val("");
+
+				$('#divModal').modal('show');
+
+
+			});
+
+            $('#btnEditar').click(function(){
+
+				$("#tblConsulta tr").each(function(row, item) {
+
+                  if($(item).find("input[type='checkbox']").is(":checked")){
+
+				    $("#tituloModal").text("Alterar Processo");
+
+				    $("#codigo").val($(item).find('td').eq(1).text());
+				    $("#nome").val($(item).find('td').eq(2).text());
+				    $("#dataInicio").val($(item).find('td').eq(3).text());
+				    $("#dataTermino").val($(item).find('td').eq(4).text());
+
+    				$('#divModal').modal('show');
+
+                     return false;
+
+                  }
+
+               });
+
+
+			});
+            
+
+            $('#btnExCluir').click(function(){
+
+				$("#tblConsulta tr").each(function(row, item) {
+
+                  if($(item).find("input[type='checkbox']").is(":checked")){
+
+				    $("#tituloExcluir").text($(item).find('td').eq(2).text());
+				    $("#codigoExcluir").val($(item).find('td').eq(1).text());
+    				$('#divModalExcluir').modal('show');
+
+                     return false;
+
+                  }
+
+               });
+
+
+			});
+
+
+            $("#formCadastro").submit(function(e){
+
+                try{
+
+                    e.preventDefault();
+
+                    var mDado = {
+                        id_processo: parseInt($("#codigo").val()),
+                        nom_processo: $("#nome").val(),
+                        dt_inicio: toData($("#dataInicio").val()),
+                        dt_termino: toData($("#dataTermino").val())
+                    };
+
+                    var mMetodo;
+                    //alert(JSON.stringify(mDado));
+                    if(mDado.id_processo == 0){
+
+                        mMetodo = "POST";
+
+                    }else{
+
+                        mMetodo = "PUT";
+
+                    }
+
+                    if(mDado.nom_processo == "" ||
+                        mDado.dt_inicio == "" ||
+                    mDado.dt_termino == ""
+                    ){
+
+                        alert("Preencha os campos do formulário.");
+                        return false;
+
+                    }
+
+                    $.ajax({
+
+                        'url': "http://" + window.location.host + "/api/Processo",
+                        'type': mMetodo,
+                        'contentType': "application/json",
+                        dataType : 'json',
+                        'data': JSON.stringify(mDado),
+                        'dataSrc': '',
+                        success: function(data) {
+                            
+
+                            if(data != null){
+
+                                if(data.hasOwnProperty("id_processo")){
+
+                                    if(data.id_processo > 0){
+
+                                        refreshData();
+                                        $('#divModal').modal('hide');
+                                        $("#btnEnviar").unbind();
+                                        return false;
+
+                                    }
+
+                                }
+
+                            }
+
+                        },
+                        error: function (request, status, erro) {
+
+                            alert("Problema ocorrido: " + status + "\nDescição: " + erro + "\nInterno: " + request.responseText);
+                            
+
+                        }//Mensagem de erro da busca de dados
+
+                    });
+
+
+                }catch (Error) {
+
+                    alert(Error);
+
+                }
+
+                return false;
+
+            });
+            
+            $("#formExcluir").submit(function(e){
+
+                try{
+
+                    e.preventDefault();
+
+
+                    $('#divModal').modal('hide');
+
+                    $.ajax({
+
+                        'url': "http://" + window.location.host + "/api/Processo",
+                        'type': 'DELETE',
+                        'contentType': "application/json",
+                        dataType : 'json',
+                        'data':   JSON.stringify(parseInt($("#codigoExcluir").val())),
+                        'dataSrc': '',
+                        success: function(data) {
+
+                            if(data != null){
+
+                                if(data){
+
+                                    refreshData();
+                                    $('#divModalExcluir').modal('hide');
+                                    $("#btnEnviarExcluir").unbind();
+                                    return false;
+
+                                }
+
+                            }
+
+                        },
+                        error: function (request, status, erro) {
+
+                            alert("Problema ocorrido: " + status + "\nDescição: " + erro + "\nInterno: " + request.responseText);
+
+
+                        }//Mensagem de erro da busca de dados
+
+                    });
+
+
+                }catch (Error) {
+
+                    alert(Error);
+
+                }
+
+                return false;
+
+            });
+
+}

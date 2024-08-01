@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\paulo\\Documents\\SistemaCRM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|c:\\users\\paulo\\documents\\sistemacrm\\sistemacrm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|solutionrelative:sistemacrm\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|c:\\users\\paulo\\documents\\sistemacrm\\sistemacrm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|solutionrelative:sistemacrm\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|c:\\users\\paulo\\documents\\sistemacrm\\sistemacrm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|solutionrelative:sistemacrm\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|c:\\users\\paulo\\documents\\sistemacrm\\sistemacrm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68195C55-E86F-45B4-A6CB-0E106ED799F1}|SistemaCRM\\API_CRM.csproj|solutionrelative:sistemacrm\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.303\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\appsettings.json",
+              "RelativeDocumentMoniker": "SistemaCRM\\appsettings.json",
+              "ToolTip": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\appsettings.json",
+              "RelativeToolTip": "SistemaCRM\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T23:53:52.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SistemaCRM\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\appsettings.Development.json",
+              "RelativeToolTip": "SistemaCRM\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-31T23:53:50.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SistemaCRM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SistemaCRM\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAcwG0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T23:43:10.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SistemaCRM\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\paulo\\Documents\\SistemaCRM\\SistemaCRM\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SistemaCRM\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T23:40:38.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.NET.Sdk.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.303\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.303\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.targets",
+              "ViewState": "AQIAAK8CAAAAAAAAAAAkwMQCAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-07-31T23:34:34.291Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
