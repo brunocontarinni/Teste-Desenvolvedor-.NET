@@ -40,17 +40,17 @@ Abaixo as Tecnologias e FrameWorks utilizado para desenvolvimento da API.
    
    ![Imagem 1](imagens/banco_1.png)
    ![Imagem 2](imagens/banco_2.png)
-   ![Imagem 3](imagens/banco_3.png)
+   ![Imagem 3](imagens/bando_3.png)
 
 2. O banco de dados utilizado se chama "bd_crm", caso deseja alterar, altere nos seguintes lugares:
 
    * Arquivo dump;
      
-   ![Imagem 5](imagens/banco_5.png)
+   ![Imagem 5](imagens/bando_5.png)
    
    * A string de conexão localizada no arquivo json da aplicação;
      
-   ![Imagem 4](imagens/banco_4.png)
+   ![Imagem 4](imagens/bando_4.png)
 
 3. No diretório raiz deste projeto, encontra-se uma pasta chamada "projeto", nela se enconta o arquivo da aplicação em si;
 
@@ -77,13 +77,3 @@ Abaixo as Tecnologias e FrameWorks utilizado para desenvolvimento da API.
    * <a href="https://youtu.be/EJplvIq12eg" targent="_blanck">YouTube - Parte 1</a>
    
    * <a href="https://youtu.be/J6cV_eft2uQ" targent="_blanck">YouTube - Parte 2</a>
-   
-## Entregas
-
-Para realizar a entrega do teste você deve:
-
-* Faça um commit da sua branch com a implementação do teste
-  
-* Realize o pull request da sua branch nesse repositório
-
-Além do pull request você deve **gravar um vídeo de no máximo 30 minutos** mostrando o que foi desenvolvido, falando sobre as decisões que foram tomadas, as tecnologias utilizadas, arquitetura e tudo que você achar relevante. A facecam é opcional, mas é um extra desejável. Esse vídeo deve ser postado no youtube (pode ser não listado) e seu link deve estar no `README.md` do projeto.
