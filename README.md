@@ -77,3 +77,10 @@ Para realizar a entrega do teste você deve:
 * Realize o pull request da sua branch nesse repositório
 
 Além do pull request você deve **gravar um vídeo de no máximo 30 minutos** mostrando o que foi desenvolvido, falando sobre as decisões que foram tomadas, as tecnologias utilizadas, arquitetura e tudo que você achar relevante. A facecam é opcional, mas é um extra desejável. Esse vídeo deve ser postado no youtube (pode ser não listado) e seu link deve estar no `README.md` do projeto.
+
+## LINK DO VÍDEO:
+https://youtu.be/B6P8KR3qYDU
+##
+## Para executar migrations:
+Modifique a AppSettings para sua conexão de banco de dados;
+Entrar na raíz do projeto domain e execute o comando: dotnet ef database update.

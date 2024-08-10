@@ -1,0 +1,9 @@
+namespace AT.API.Controllers.ViewModels
+{
+    public class AddCoursesViewModel
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public int AvailableVacancies { get; set; }
+    }
+}

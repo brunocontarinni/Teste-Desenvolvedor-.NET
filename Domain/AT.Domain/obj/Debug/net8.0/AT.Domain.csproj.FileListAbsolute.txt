@@ -1,0 +1,15 @@
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\bin\Debug\net8.0\AT.Domain.deps.json
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\bin\Debug\net8.0\AT.Domain.runtimeconfig.json
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\bin\Debug\net8.0\AT.Domain.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\bin\Debug\net8.0\AT.Domain.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.csproj.AssemblyReference.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.AssemblyInfoInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.AssemblyInfo.cs
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.csproj.CoreCompileInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.sourcelink.json
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\refint\AT.Domain.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\AT.Domain.genruntimeconfig.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Domain\AT.Domain\obj\Debug\net8.0\ref\AT.Domain.dll
