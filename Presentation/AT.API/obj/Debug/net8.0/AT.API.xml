@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AT.API</name>
+    </assembly>
+    <members>
+        <member name="M:AT.API.Controllers.CandidateController.GetAll(System.String)">
+            <summary>
+            Get all candidate
+            </summary>
+            <param name="term">Enter name candidate</param>
+            <returns>If there is a candidate, return the candidate, if not, return empty list</returns>
+        </member>
+        <member name="M:AT.API.Controllers.CandidateController.Get(System.Int64)">
+            <summary>
+            Retrieve candidate by id
+            </summary>
+            <param name="id">Candidate identifier</param> 
+            <returns>If there is a candidate, return the candidate, if not, return null</returns>
+        </member>
+        <member name="M:AT.API.Controllers.CandidateController.Create(AT.API.Controllers.ViewModels.AddCandidatesViewModel)">
+            <summary>
+            Candidate creation
+            </summary>
+            <param name="viewModel">Object representing an candidate</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.CandidateController.Update(AT.API.Controllers.ViewModels.UpdateCandidatesViewModel)">
+            <summary>
+            Cadidate update
+            </summary>
+            <param name="viewModel">Object representing an candidate</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.CandidateController.Delete(System.Int64)">
+            <summary>
+            Delete candidate
+            </summary>
+            <param name="id">Candidate identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.CourseController.GetAll(System.String)">
+            <summary>
+            Get all courses
+            </summary>
+            <param name="term">Enter name course</param>
+            <returns>If there is a course, return the course, if not, return empty list</returns>
+        </member>
+        <member name="M:AT.API.Controllers.CourseController.Get(System.Int64)">
+            <summary>
+            Retrieve courses by id
+            </summary>
+            <param name="id">Course identifier</param> 
+            <returns>If there is a course, return the course, if not, return null</returns>
+        </member>
+        <member name="M:AT.API.Controllers.CourseController.Create(AT.API.Controllers.ViewModels.AddCoursesViewModel)">
+            <summary>
+            Course creation
+            </summary>
+            <param name="viewModel">Object representing an course</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.CourseController.Update(AT.API.Controllers.ViewModels.UpdateCoursesViewModel)">
+            <summary>
+            Course update
+            </summary>
+            <param name="viewModel">Object representing an course</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.CourseController.Delete(System.Int64)">
+            <summary>
+            Delete course
+            </summary>
+            <param name="id">Course identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.InscriptionController.GetAll(System.String)">
+            <summary>
+            Get all inscriptions
+            </summary>
+            <param name="term">Enter registration number or personal number</param>
+            <returns>If there is a inscription, return the inscription, if not, return empty list</returns>
+        </member>
+        <member name="M:AT.API.Controllers.InscriptionController.Get(System.Int64)">
+            <summary>
+            Retrieve Inscriptions by id
+            </summary>
+            <param name="id">Inscription identifier</param> 
+            <returns>If there is a inscription, return the inscription, if not, return null</returns>
+        </member>
+        <member name="M:AT.API.Controllers.InscriptionController.Create(AT.API.Controllers.ViewModels.AddInscriptionsViewModel)">
+            <summary>
+            Registration creation
+            </summary>
+            <param name="viewModel">Object representing an inscription</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.InscriptionController.Update(AT.API.Controllers.ViewModels.UpdateInscriptionsViewModel)">
+            <summary>
+            Registration update
+            </summary>
+            <param name="viewModel">Object representing an inscription</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.InscriptionController.Delete(System.Int64)">
+            <summary>
+            Delete inscription
+            </summary>
+            <param name="id">Inscription identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.SelectionProcessesController.GetAll(System.String)">
+            <summary>
+            Get all selection process
+            </summary>
+            <param name="term">Enter name selection process</param>
+            <returns>If there is a selection process, return the selection process, if not, return empty list</returns>
+        </member>
+        <member name="M:AT.API.Controllers.SelectionProcessesController.Get(System.Int64)">
+            <summary>
+            Retrieve selection process by id
+            </summary>
+            <param name="id">Selection process identifier</param> 
+            <returns>If there is a selection process, return the selection process, if not, return null</returns>
+        </member>
+        <member name="M:AT.API.Controllers.SelectionProcessesController.Create(AT.API.Controllers.ViewModels.AddSelectionProcessesViewModel)">
+            <summary>
+            Selection process creation
+            </summary>
+            <param name="viewModel">Object representing an selection process</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.SelectionProcessesController.Update(AT.API.Controllers.ViewModels.UpdateSelectionProcessesViewModel)">
+            <summary>
+            Selection process update
+            </summary>
+            <param name="viewModel">Object representing an selection process</param>
+            <returns></returns>
+        </member>
+        <member name="M:AT.API.Controllers.SelectionProcessesController.Delete(System.Int64)">
+            <summary>
+            Delete selection process
+            </summary>
+            <param name="id">Selection process identifier</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

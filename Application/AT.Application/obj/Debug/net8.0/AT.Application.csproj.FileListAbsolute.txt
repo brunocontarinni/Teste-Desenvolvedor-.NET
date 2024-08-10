@@ -1,0 +1,16 @@
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\bin\Debug\net8.0\AT.Application.deps.json
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\bin\Debug\net8.0\AT.Application.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\bin\Debug\net8.0\AT.Application.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\bin\Debug\net8.0\AT.Domain.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\bin\Debug\net8.0\AT.Domain.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.csproj.AssemblyReference.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.AssemblyInfoInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.AssemblyInfo.cs
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.csproj.CoreCompileInputs.cache
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.sourcelink.json
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Appli.289FAF0C.Up2Date
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\refint\AT.Application.dll
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\AT.Application.pdb
+C:\Users\letic\OneDrive\Área de Trabalho\Repository\Teste-Desenvolvedor-.NET\Application\AT.Application\obj\Debug\net8.0\ref\AT.Application.dll
