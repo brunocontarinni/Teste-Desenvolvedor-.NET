@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.text.encodings.web/8.0.0/buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets" Condition="Exists('$(NuGetPackageRoot)system.text.encodings.web/8.0.0/buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/netcoreapp2.0/System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json/8.0.3/buildTransitive/netcoreapp2.0/System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.text.encoding.codepages/8.0.0/buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets" Condition="Exists('$(NuGetPackageRoot)system.text.encoding.codepages/8.0.0/buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.security.permissions/8.0.0/buildTransitive/netcoreapp2.0/System.Security.Permissions.targets" Condition="Exists('$(NuGetPackageRoot)system.security.permissions/8.0.0/buildTransitive/netcoreapp2.0/System.Security.Permissions.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.security.cryptography.protecteddata/8.0.0/buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets" Condition="Exists('$(NuGetPackageRoot)system.security.cryptography.protecteddata/8.0.0/buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.diagnostics.diagnosticsource/8.0.1/buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets" Condition="Exists('$(NuGetPackageRoot)system.diagnostics.diagnosticsource/8.0.1/buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets')" />
+    <Import Project="$(NuGetPackageRoot)system.configuration.configurationmanager/8.0.0/buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets" Condition="Exists('$(NuGetPackageRoot)system.configuration.configurationmanager/8.0.0/buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets')" />
+  </ImportGroup>
+</Project>
