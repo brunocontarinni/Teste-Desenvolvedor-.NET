@@ -1,0 +1,34 @@
+﻿@model ProcessoSeletivo
+
+@{
+    TempData["title"] = "Excluir Processo Seletivo";
+}
+
+<div class="container bg-dark p-5 rounded-5">
+    <div class="mb-5 text-center">
+        <h1 class="text-light">Exclusão de Processos Seletivos</h1>
+    </div>
+    <form method="post" asp-controller="ProcessoSeletivo" asp-action="Excluir">
+        <input type="hidden" asp-for=IdProcessoSeletivo />
+        <h2>Tem certeza que deseja excluirW</h2>
+        <div class="mb-3">
+            <label for="Nome" class="text-light form-label">Nome:</label>
+            <input type="text" asp-for="Nome" class="shadow-none form-control text-dark" id="exampleInputNome" placeholder="Qual o nome do Processo?" disabled>
+            <span class="text-danger" asp-validation-for="Nome"></span>
+        </div>
+        <div class="mb-3">
+            <label for="DataDeInicio" class="text-light form-label">Data de Inicio:</label>
+            <input asp-for="DataDeInicio" type="text" class="shadow-none form-control text-dark" id="exampleInputDataDeInici" placeholder="Digite a Data de Inicio do Processo" disabled>
+            <span class="text-danger" asp-validation-for="DataDeInicio"></span>
+        </div>
+        <div class="mb-3">
+            <label class="text-light form-label" for="DataDeTermino">Data de Termino:</label>
+            <input type="text" asp-for="DataDeTermino" class="shadow-none form-control text-dark" id="exampleInputDataDeTermino" placeholder="Digite a Data de Termino do Processo" disabled>
+            <span class="text-danger" asp-validation-for="DataDeTermino"></span>
+        </div>
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="w-50 btn btn-danger">Excluir</button>
+            <a class="w-50 btn btn-primary" asp-controller="ProcessoSeletivo" asp-action="Index">Voltar</a>
+        </div>
+    </form>
+</div>

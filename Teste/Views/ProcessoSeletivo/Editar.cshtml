@@ -1,0 +1,34 @@
+﻿@model ProcessoSeletivo
+    ViewData["title"] = "Editar empréstimo";
+}
+
+
+
+<div class="container bg-dark p-5 rounded-5">
+    <div class="mb-5 text-center">
+        <h1 class="text-light">Edição de Processo Seletivos</h1>
+    </div>
+    <form method="post" asp-controller="ProcessoSeletivo" asp-action="Editar">
+        <input type="hidden" asp-for=IdProcessoSeletivo />
+        <div class="mb-3">
+            <label for="Nome" class="text-light form-label">Nome:</label>
+            <input type="text" asp-for="Nome" class="shadow-none form-control" id="exampleInputNome" placeholder="Qual o nome do Processo?">
+            <span class="text-danger" asp-validation-for="Nome"></span>
+        </div>
+        <div class="mb-3">
+            <label for="DataDeInicio" class="text-light form-label">Data de Inicio</label>
+            <input asp-for="DataDeInicio" type="text" class="form-control shadow-none" id="exampleInputDataDeInicio" placeholder="Digite a Data de Inicio do Processo">
+            <span class="text-danger" asp-validation-for="DataDeInicio"></span>
+        </div>
+        <div class="mb-3">
+            <label for="DataDeTermino" class="text-light form-label">Data de Termino</label>
+            <input asp-for="DataDeTermino" type="text" class="form-control shadow-none" id="exampleInputDataDeTermino" placeholder="Digite a Data de Termino do Processo">
+            <span class="text-danger" asp-validation-for="DataDeTermino"></span>
+        </div>
+
+        <div class="d-flex gap-5 mt-5">
+            <button type="submit" class="w-50 btn btn-success">Editar</button>
+            <a class="w-50 btn btn-primary" asp-controller="ProcessoSeletivo" asp-action="Index">Voltar</a>
+        </div>
+    </form>
+</div>

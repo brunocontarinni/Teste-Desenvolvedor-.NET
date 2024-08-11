@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProcessoSeletivo>
+
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="container ">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1>Processos Seletivos</h1>
+
+        <div>
+            <a class="btn btn-success mx-2" asp-controller="ProcessoSeletivo" asp-action="Cadastrar"><i class="bi bi-file-earmark-plus mx-2"></i>Cadastrar novo processo seletivo</a>
+        </div>
+
+    </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data de Início</th>
+            <th>Data de Término</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model != null)
+    {@foreach (var ProcessoSeletivo in Model)
+    {
+        <tr>
+            <th scope="row">@ProcessoSeletivo.IdProcessoSeletivo</th>
+            <td>@ProcessoSeletivo.Nome</td>
+            <td>@ProcessoSeletivo.DataDeInicio.("dd/MM/yyyy")</td>
+            <td>@ProcessoSeletivo.DataDeTermino.("dd/MM/yyyy")</td>
+            <td>
+                            <a class="btn btn-warning mx-2" asp-controller="ProcessoSeletivo" asp-action="Editar" asp-route-id="@ProcessoSeletivo.IdProcessoSeletivo"><i class="bi bi-pencil-square"></i>Editar</a>
+                            <a class="btn btn-danger mx-2" asp-controller="ProcessoSeletivo" asp-action="Excluir" asp-route-id="@ProcessoSeletivo.IdProcessoSeletivo"><i class="bi bi-trash3-fill"></i>Excluir</a>
+            </td>
+        </tr>
+
+    }}
+    
+    </tbody>
+</table>

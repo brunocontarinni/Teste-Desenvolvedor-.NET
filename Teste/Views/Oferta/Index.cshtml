@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Oferta>
+
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="container ">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1>Cursos</h1>
+
+        <div>
+            <a class="btn btn-success mx-2" asp-controller="Oferta" asp-action="Cadastrar"><i class="bi bi-file-earmark-plus mx-2"></i>Cadastrar novo curso</a>
+        </div>
+
+    </div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Vagas Disponiveis</th>
+        </tr>
+    </thead>
+    <tbody>
+    @if (Model != null)
+    {@foreach (var Oferta in Model)
+    {
+        <tr>
+            <th scope="row">@Oferta.IdOferta</th>
+            <td>@Oferta.Nome</td>
+            <td>@Oferta.Descricao</td>
+            <td>@Oferta.Vagas.</td>
+            <td>
+                            <a class="btn btn-warning mx-2" asp-controller="Oferta" asp-action="Editar" asp-route-id="@Oferta.IdOferta"><i class="bi bi-pencil-square"></i>Editar</a>
+                            <a class="btn btn-danger mx-2" asp-controller="Oferta" asp-action="Excluir" asp-route-id="@Oferta.IdOferta"><i class="bi bi-trash3-fill"></i>Excluir</a>
+            </td>
+        </tr>
+
+    }}
+    
+    </tbody>
+</table>
