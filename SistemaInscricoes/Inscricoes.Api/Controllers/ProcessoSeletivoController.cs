@@ -56,6 +56,7 @@ public class ProcessoSeletivoController : ControllerBase
 	}
 
 	[HttpDelete("{id}")]
+	[Authorize(Roles = "Coordinator")]
 	[SwaggerOperation(Summary = "Excluir processo seletivo", Description = "Exclui um processo seletivo específico pelo seu ID.")]
 	[SwaggerResponse(StatusCodes.Status200OK, "Processo seletivo excluído com sucesso", typeof(DeleteProcessoSeletivoResponseDTO))]
 	[SwaggerResponse(StatusCodes.Status404NotFound, "Processo seletivo não encontrado")]
