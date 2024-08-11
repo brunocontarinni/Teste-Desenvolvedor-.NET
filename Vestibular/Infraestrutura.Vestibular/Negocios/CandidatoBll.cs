@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Infraestrutura.Vestibular.Interfaces;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Modelo.Vestibular.Dtos;
 using Modelo.Vestibular.Entidades;
 using Modelo.Vestibular.ModelView;
@@ -24,6 +26,14 @@ namespace Infraestrutura.Vestibular.Negocios
                 Candidato candidato = _mapper.Map<Candidato>(modelView);
                 return await _candidato.Adicionar(candidato);
             }
+            catch (DbUpdateException ex)
+            {
+                if (ex.InnerException is not null && ex.InnerException.Message.Contains("IX_Candidatos_CPF")) 
+                {
+                    throw new DbUpdateException($"O CPF {modelView.CPF} já encotra-se cadastrado.");
+                }
+                throw; 
+            }
             catch (Exception) { throw; }
         }
 
@@ -31,13 +41,8 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                List<CandidatoDto> candidatoDtos = new List<CandidatoDto>();
                 var listCandidato = await _candidato.ObterTodos();
-                foreach (var item in listCandidato)
-                {
-                    candidatoDtos.Add(_mapper.Map<CandidatoDto>(item));
-                }
-                return candidatoDtos;
+                return _mapper.Map<IEnumerable<CandidatoDto>>(listCandidato);
             }
             catch(Exception) { throw; }
         }
@@ -46,16 +51,20 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                return _mapper.Map<CandidatoDto>(await _candidato.ObertePorId(id));
+                var candidato = await _candidato.ObterPorId(id);
+                if(candidato is Candidato)
+                    return _mapper.Map<CandidatoDto>(candidato);
+
+                throw new NullReferenceException($"Não foi encontrado o {nameof(Candidato)}");
             }
             catch(Exception) { throw; }
         }
 
-        public async void Apagar(int id)
+        public async Task Apagar(int id)
         {
             try
             {
-                Candidato candidato = await _candidato.ObertePorId(id);
+                Candidato candidato = await _candidato.ObterPorId(id);
                 if (candidato is Candidato) 
                     _candidato.Deleta(candidato);
                 else

@@ -23,19 +23,27 @@ namespace Infraestrutura.Vestibular.Contextos
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Inscricao>()
-                        .HasOne<Oferta>(ins => ins.Oferta)
-                        .WithMany(of => of.Incricoes)
-                        .HasForeignKey(ins => ins.IdOferta);
+                        .HasOne<Oferta>(i => i.Oferta)
+                        .WithMany(o => o.Incricoes)
+                        .HasForeignKey(i => i.IdOferta);
 
             modelBuilder.Entity<Inscricao>()
-                        .HasOne<Candidato>(ins => ins.Candidato)
-                        .WithMany(of => of.Incricoes)
-                        .HasForeignKey(ins => ins.IdOferta);
+                        .HasOne<Candidato>(i => i.Candidato)
+                        .WithMany(o => o.Incricoes)
+                        .HasForeignKey(i => i.IdCadidatos);
 
             modelBuilder.Entity<Inscricao>()
-                        .HasOne<ProcessoSeletivo>(ins => ins.ProcessoSeletivo)
-                        .WithMany(of => of.Incricoes)
-                        .HasForeignKey(ins => ins.IdOferta);
+                        .HasOne<ProcessoSeletivo>(i => i.ProcessoSeletivo)
+                        .WithMany(o => o.Incricoes)
+                        .HasForeignKey(i => i.IdProcessoSeletivo);
+
+            modelBuilder.Entity<Candidato>()
+                        .HasIndex(p => p.CPF)
+                        .IsUnique();
+
+            modelBuilder.Entity<Inscricao>()
+                        .HasIndex(i => i.NumInscricao)
+                        .IsUnique();
         }
     }
 }

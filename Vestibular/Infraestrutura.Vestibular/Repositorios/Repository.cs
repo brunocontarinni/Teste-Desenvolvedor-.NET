@@ -32,7 +32,11 @@ namespace Infraestrutura.Vestibular.Repositorios
 
         public async ValueTask<TEntity> GetByIdAsync(int id)
         {
-            return await Contexto.Set<TEntity>().FindAsync(id);
+            var result = await Contexto.Set<TEntity>().FindAsync(id);
+            if(result is TEntity)
+                return result;
+
+            return null;
         }
 
         public void Update(TEntity entity)

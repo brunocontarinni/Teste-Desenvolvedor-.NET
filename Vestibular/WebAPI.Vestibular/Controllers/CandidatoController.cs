@@ -27,9 +27,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // GET api/<CandidatoController>/5
         [HttpGet("{id}")]
-        public async Task<CandidatoDto> Get(int id)
+        public async Task<ActionResult<CandidatoDto>> Get(int id)
         {
-            return await _candidato.ObterPorId(id);
+            try
+            {
+                return Ok(await _candidato.ObterPorId(id));
+            }
+            catch (Exception ex) { return BadRequest(ex.Message); }
         }
 
         // POST api/<CandidatoController>
@@ -41,7 +45,7 @@ namespace WebAPI.Vestibular.Controllers
                 if (ModelState.IsValid)
                 {
                     var id = await _candidato.Criar(value);
-                    return Ok($"Inscrição com id {id}, criada com sucesso.");
+                    return Ok($"Candidato com id {id}, criada com sucesso.");
                 }
                 throw new ArgumentException();
             }
@@ -72,13 +76,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // DELETE api/<CandidatoController>/5
         [HttpDelete("{id}")]
-        public ActionResult<string> Delete(int id)
+        public async Task<ActionResult<string>> Delete(int id)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _candidato.Apagar(id);
+                    await _candidato.Apagar(id);
                     return Ok($"Candidato com id {id}, deletado com sucesso.");
                 }
                 throw new ArgumentException();

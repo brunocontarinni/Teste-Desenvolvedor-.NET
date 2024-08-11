@@ -24,7 +24,7 @@ namespace Infraestrutura.Vestibular.Repositorios
             Remove(oferta);
         }
 
-        public async Task<Oferta> ObertePorId(int id)
+        public async Task<Oferta> ObterPorId(int id)
         {
             return await GetByIdAsync(id);
         }

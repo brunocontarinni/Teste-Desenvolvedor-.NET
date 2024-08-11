@@ -27,9 +27,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // GET api/<ProcessoSeletivoController>/5
         [HttpGet("{id}")]
-        public async Task<ProcessoSeletivoDto> Get(int id)
+        public async Task<ActionResult<ProcessoSeletivoDto>> Get(int id)
         {
-            return await _seletivoBll.ObterPorId(id);
+            try
+            {
+                return Ok(await _seletivoBll.ObterPorId(id));
+            }
+            catch (Exception ex) {return BadRequest(ex.Message); }
         }
 
         // POST api/<ProcessoSeletivoController>
@@ -72,13 +76,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // DELETE api/<ProcessoSeletivoController>/5
         [HttpDelete("{id}")]
-        public ActionResult<string> Delete(int id)
+        public async Task<ActionResult<string>> Delete(int id)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _seletivoBll.Apagar(id);
+                    await _seletivoBll.Apagar(id);
                     return Ok($"Processo seletivo com id {id}, deletado com sucesso.");
                 }
                 throw new ArgumentException();

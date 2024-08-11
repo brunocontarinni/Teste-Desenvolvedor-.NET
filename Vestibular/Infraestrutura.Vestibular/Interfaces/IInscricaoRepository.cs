@@ -13,5 +13,9 @@ namespace Infraestrutura.Vestibular.Interfaces
         void Deleta(Inscricao inscricao);
 
         void Atualizar(Inscricao inscricao);
+
+        Task<IEnumerable<Inscricao>?> ObterPorCpf(string cpf);
+
+        Task<IEnumerable<Inscricao>?> ObterPorOferta(int id);
     }
 }

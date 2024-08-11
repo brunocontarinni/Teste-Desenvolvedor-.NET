@@ -31,13 +31,8 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                List<OfertaDto> ofertaDtos = new List<OfertaDto>();
                 var listOferta = await _oferta.ObterTodos();
-                foreach (var item in listOferta)
-                {
-                    ofertaDtos.Add(_mapper.Map<OfertaDto>(item));
-                }
-                return ofertaDtos;
+                return _mapper.Map<IEnumerable<OfertaDto>>(listOferta);
             }
             catch (Exception) { throw; }
         }
@@ -46,16 +41,20 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                return _mapper.Map<OfertaDto>(await _oferta.ObertePorId(id));
+                var oferta = await _oferta.ObterPorId(id);
+                if(oferta is Oferta)
+                    return _mapper.Map<OfertaDto>(oferta);
+                
+                throw new NullReferenceException($"Não foi encontrado o {nameof(Oferta)}");
             }
             catch (Exception) { throw; }
         }
 
-        public async void Apagar(int id)
+        public async Task Apagar(int id)
         {
             try
             {
-                Oferta oferta = await _oferta.ObertePorId(id);
+                Oferta oferta = await _oferta.ObterPorId(id);
                 if (oferta is Oferta)
                     _oferta.Deleta(oferta);
                 else

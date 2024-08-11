@@ -31,13 +31,34 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                List<InscricaoDto> inscricaoDtoSeletivoDtos = new List<InscricaoDto>();
-                var listProcesso = await _repository.ObterTodos();
-                foreach (var item in listProcesso)
-                {
-                    inscricaoDtoSeletivoDtos.Add(_mapper.Map<InscricaoDto>(item));
-                }
-                return inscricaoDtoSeletivoDtos;
+                var listInscricao = await _repository.ObterTodos();
+                return _mapper.Map<IEnumerable<InscricaoDto>>(listInscricao);
+            }
+            catch (Exception) { throw; }
+        }
+
+        public async Task<IEnumerable<InscricaoDto>> ObterTodosPorCPF(string cpf)
+        {
+            try
+            {
+                var listInscricao = await _repository.ObterPorCpf(cpf);
+                if(listInscricao is IEnumerable<Inscricao>)
+                    return _mapper.Map<IEnumerable<InscricaoDto>>(listInscricao);
+
+                throw new NullReferenceException("Inscrição não encontrado.");
+            }
+            catch (Exception) { throw; }
+        }
+
+        public async Task<IEnumerable<InscricaoDto>> ObterTodosPorOferta(int id)
+        {
+            try
+            {
+                var listInscricao = await _repository.ObterPorOferta(id);
+                if (listInscricao is IEnumerable<Inscricao>)
+                    return _mapper.Map<IEnumerable<InscricaoDto>>(listInscricao);
+
+                throw new NullReferenceException("Inscrição não encontrado.");
             }
             catch (Exception) { throw; }
         }
@@ -46,12 +67,16 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                return _mapper.Map<InscricaoDto>(await _repository.ObertePorId(id));
+                var inscricao = await _repository.ObertePorId(id);
+                if(inscricao is Inscricao)
+                    return _mapper.Map<InscricaoDto>(inscricao);
+
+                throw new NullReferenceException($"Não foi encontrado o {nameof(Inscricao)}");
             }
             catch (Exception) { throw; }
         }
 
-        public async void Apagar(int id)
+        public async Task Apagar(int id)
         {
             try
             {
@@ -59,7 +84,7 @@ namespace Infraestrutura.Vestibular.Negocios
                 if (inscricao is Inscricao)
                     _repository.Deleta(inscricao);
                 else
-                    throw new NullReferenceException("Oferta não encontrado.");
+                    throw new NullReferenceException("Inscrição não encontrado.");
             }
             catch (Exception) { throw; }
         }

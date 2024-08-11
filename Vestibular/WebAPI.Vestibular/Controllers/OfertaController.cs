@@ -26,9 +26,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // GET api/<OfertaController>/5
         [HttpGet("{id}")]
-        public async Task<OfertaDto> Get(int id)
+        public async Task<ActionResult<OfertaDto>> Get(int id)
         {
-            return await _ofertaBll.ObterPorId(id);
+            try
+            {
+                return Ok(await _ofertaBll.ObterPorId(id));
+            }
+            catch (Exception ex) {return BadRequest(ex.Message); }
         }
 
         // POST api/<OfertaController>
@@ -71,13 +75,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // DELETE api/<OfertaController>/5
         [HttpDelete("{id}")]
-        public ActionResult<string> Delete(int id)
+        public async Task<ActionResult<string>> Delete(int id)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _ofertaBll.Apagar(id);
+                    await _ofertaBll.Apagar(id);
                     return Ok($"Oferta com id {id}, deletado com sucesso.");
                 }
                 throw new ArgumentException();

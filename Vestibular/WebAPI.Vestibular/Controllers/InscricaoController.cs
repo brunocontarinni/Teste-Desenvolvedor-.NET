@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Modelo.Vestibular.Dtos;
 using Modelo.Vestibular.ModelView;
+using System.ComponentModel.DataAnnotations;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -27,9 +28,51 @@ namespace WebAPI.Vestibular.Controllers
 
         // GET api/<InscricaoController>/5
         [HttpGet("{id}")]
-        public async Task<InscricaoDto> Get(int id)
+        public async Task<ActionResult<InscricaoDto>> Get(int id)
         {
-            return await _inscricao.ObterPorId(id);
+            try
+            {
+                return Ok(await _inscricao.ObterPorId(id));
+            }
+            catch (Exception ex) { return BadRequest(ex.Message); }
+        }
+
+        // GET api/<InscricaoController>/5
+        [HttpGet("CPF/{cpf}")]
+        public async Task<ActionResult<IEnumerable<InscricaoDto>>> GetPorCPF([Length(11,11)] string cpf)
+        {
+            try
+            {
+                if (ModelState.IsValid) 
+                {
+                    return Ok(await _inscricao.ObterTodosPorCPF(cpf));
+                }
+                
+                throw new NullReferenceException("Por favor, fornecer o CPF.");
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        // GET api/<InscricaoController>/5
+        [HttpGet("Oferta/{idOferta}")]
+        public async Task<ActionResult<IEnumerable<InscricaoDto>>> GetPorOferta(int idOferta)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    return Ok(await _inscricao.ObterTodosPorOferta(idOferta));
+                }
+
+                throw new NullReferenceException("Por favor, fornecer o ID da oferta.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         // POST api/<InscricaoController>
@@ -72,13 +115,13 @@ namespace WebAPI.Vestibular.Controllers
 
         // DELETE api/<InscricaoController>/5
         [HttpDelete("{id}")]
-        public ActionResult<string> Delete(int id)
+        public async Task<ActionResult<string>> Delete(int id)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    _inscricao.Apagar(id);
+                    await _inscricao.Apagar(id);
                     return Ok($"Inscrição com id {id}, deletado com sucesso.");
                 }
                 throw new ArgumentException();

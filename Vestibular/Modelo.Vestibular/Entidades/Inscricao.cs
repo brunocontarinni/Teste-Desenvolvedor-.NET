@@ -8,7 +8,7 @@ namespace Modelo.Vestibular.Entidades
         [Key]
         public int Id { get; set; }
 
-        public int NumInscricao { get; set; }
+        public int NumInscricao { get; set; } = DateTime.Now.Year + new Random().Next(1000000, 9999999);
 
         public DateTime Data { get; set; }
 

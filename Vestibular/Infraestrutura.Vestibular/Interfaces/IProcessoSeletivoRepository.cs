@@ -8,7 +8,7 @@ namespace Infraestrutura.Vestibular.Interfaces
 
         Task<IEnumerable<ProcessoSeletivo>> ObterTodos();
 
-        Task<ProcessoSeletivo> ObertePorId(int id);
+        Task<ProcessoSeletivo> ObterPorId(int id);
 
         void Deleta(ProcessoSeletivo processoSeletivo);
 

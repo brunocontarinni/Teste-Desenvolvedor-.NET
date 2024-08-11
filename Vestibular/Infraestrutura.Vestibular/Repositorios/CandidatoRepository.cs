@@ -24,9 +24,9 @@ namespace Infraestrutura.Vestibular.Repositorios
             Remove(candidato);
         }
 
-        public async Task<Candidato> ObertePorId(int id)
+        public async Task<Candidato> ObterPorId(int id)
         {
-           return await GetByIdAsync(id);
+            return await GetByIdAsync(id);
         }
 
         public async Task<IEnumerable<Candidato>> ObterTodos()

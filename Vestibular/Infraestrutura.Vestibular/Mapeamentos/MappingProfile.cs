@@ -9,6 +9,7 @@ namespace Infraestrutura.Vestibular.Mapeamentos
     {
         public MappingProfile()
         {
+            //Mapping entty
             CreateMap<Candidato, CandidatoDto>();
             CreateMap<CandidatoDto, Candidato>();
             CreateMap<Inscricao, InscricaoDto>();

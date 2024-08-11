@@ -24,7 +24,7 @@ namespace Infraestrutura.Vestibular.Repositorios
             Remove(processoSeletivo);
         }
 
-        public async Task<ProcessoSeletivo> ObertePorId(int id)
+        public async Task<ProcessoSeletivo> ObterPorId(int id)
         {
             return await GetByIdAsync(id);
         }

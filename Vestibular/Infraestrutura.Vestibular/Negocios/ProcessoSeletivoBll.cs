@@ -31,13 +31,8 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                List<ProcessoSeletivoDto> ProcessoSeletivoDtos = new List<ProcessoSeletivoDto>();
                 var listProcesso = await _repository.ObterTodos();
-                foreach (var item in listProcesso)
-                {
-                    ProcessoSeletivoDtos.Add(_mapper.Map<ProcessoSeletivoDto>(item));
-                }
-                return ProcessoSeletivoDtos;
+                return _mapper.Map<IEnumerable<ProcessoSeletivoDto>>(listProcesso);
             }
             catch (Exception) { throw; }
         }
@@ -46,16 +41,20 @@ namespace Infraestrutura.Vestibular.Negocios
         {
             try
             {
-                return _mapper.Map<ProcessoSeletivoDto>(await _repository.ObertePorId(id));
+                var processo = await _repository.ObterPorId(id);
+                if(processo is ProcessoSeletivo)
+                    return _mapper.Map<ProcessoSeletivoDto>(processo);
+
+                throw new NullReferenceException($"Não foi encontrado o {nameof(ProcessoSeletivo)}");
             }
             catch (Exception) { throw; }
         }
 
-        public async void Apagar(int id)
+        public async Task Apagar(int id)
         {
             try
             {
-                ProcessoSeletivo processo = await _repository.ObertePorId(id);
+                ProcessoSeletivo processo = await _repository.ObterPorId(id);
                 if (processo is ProcessoSeletivo)
                     _repository.Deleta(processo);
                 else

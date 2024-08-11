@@ -8,7 +8,7 @@ namespace Infraestrutura.Vestibular.Interfaces
 
         Task<IEnumerable<Candidato>> ObterTodos();
 
-        Task<Candidato> ObertePorId(int id);
+        Task<Candidato> ObterPorId(int id);
 
         void Deleta(Candidato candidato);
 

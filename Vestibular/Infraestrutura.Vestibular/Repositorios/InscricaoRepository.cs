@@ -1,5 +1,6 @@
 ﻿using Infraestrutura.Vestibular.Contextos;
 using Infraestrutura.Vestibular.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Modelo.Vestibular.Entidades;
 
 namespace Infraestrutura.Vestibular.Repositorios
@@ -22,6 +23,20 @@ namespace Infraestrutura.Vestibular.Repositorios
         public void Deleta(Inscricao inscricao)
         {
             Remove(inscricao);
+        }
+
+        public async Task<IEnumerable<Inscricao>?> ObterPorCpf(string cpf)
+        {
+            var candidato = await Contexto.Candidatos.Include(i => i.Incricoes)
+                                          .FirstOrDefaultAsync(px => px.CPF.Equals(cpf));
+            return candidato?.Incricoes;
+        }
+
+        public async Task<IEnumerable<Inscricao>?> ObterPorOferta(int id)
+        {
+            var oferta = await Contexto.Ofertas.Include(i => i.Incricoes)
+                                       .FirstOrDefaultAsync(o => o.Id.Equals(id));
+            return oferta?.Incricoes;
         }
 
         async Task<Inscricao> IInscricaoRepository.ObertePorId(int id)

@@ -5,9 +5,6 @@ namespace Modelo.Vestibular.ModelView
     public class InscricaoModelView
     {
         [Required]
-        public int NumInscricao { get; set; }
-
-        [Required]
         public DateTime Data { get; set; }
 
         [Required]
