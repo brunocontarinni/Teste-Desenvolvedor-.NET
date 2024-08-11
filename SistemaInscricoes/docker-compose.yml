@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  inscricoes.api:
+    image: ${DOCKER_REGISTRY-}inscricoesapi
+    container_name: inscricoes.api
+    build:
+      context: .
+      dockerfile: Inscricoes.Api/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+
+  inscricoes.database:
+    image: postgres:latest
+    container_name: inscricoes.database
+    environment:
+      - POSTGRES_DB=inscricoes
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./containers/inscricoes-db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
