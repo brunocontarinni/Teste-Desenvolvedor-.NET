@@ -58,7 +58,7 @@ namespace CrmTest.Services{
         {
             var leadMap = await _context.Lead.FindAsync(id);
             if (leadMap == null)
-                throw new Exception("Oferta Não encontrada.");
+                throw new Exception("Lead não encontrado.");
             return leadMap;
         }
 

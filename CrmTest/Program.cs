@@ -22,6 +22,8 @@ builder.Services.AddProblemDetails();
 builder.Services.AddLogging();  
 builder.Services.AddScoped<ILeadServices, LeadServices>();
 builder.Services.AddScoped<IOfertaServices, OfertaServices>();
+builder.Services.AddScoped<IProcessoSeletivoServices, ProcessoSeletivoServices>();
+builder.Services.AddScoped<IInscricaoServices, InscricaoServices>();
 var app = builder.Build();
 {
     using var scope = app.Services.CreateScope();

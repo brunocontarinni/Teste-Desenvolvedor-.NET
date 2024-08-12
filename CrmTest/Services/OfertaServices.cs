@@ -10,10 +10,10 @@ namespace CrmTest.Services
     public class OfertaServices : IOfertaServices
     {
         private readonly CrmTestDbContex _context;
-        private readonly ILogger<LeadServices> _logger;
+        private readonly ILogger<OfertaServices> _logger;
         private readonly IMapper _mapper;
 
-        public OfertaServices(CrmTestDbContex context, ILogger<LeadServices> logger, IMapper mapper)
+        public OfertaServices(CrmTestDbContex context, ILogger<OfertaServices> logger, IMapper mapper)
         {
             _context = context;
             _logger = logger;
@@ -67,6 +67,7 @@ namespace CrmTest.Services
                     ofertaMap.Descricao = request.Descricao;
                 if (request.Qtd_Vagas_Disponiveis != null)
                     ofertaMap.Qtd_Vagas_Disponiveis = request.Qtd_Vagas_Disponiveis;
+                await _context.SaveChangesAsync();
             }
             catch (Exception err)
             {
@@ -92,8 +93,8 @@ namespace CrmTest.Services
             }
             catch (Exception err)
             {
-                _logger.LogError(err, "Ocorreu um erro ao criar Oferta.");
-                throw new Exception("Ocorreu um erro ao criar Oferta");
+                _logger.LogError(err, "Ocorreu um erro ao excluir Oferta.");
+                throw new Exception("Ocorreu um erro ao excluir Oferta");
             }
         }
     }
