@@ -10,5 +10,8 @@ namespace Teste_Desenvolvedor_.NET.Services.Interfaces
         Task<IEnumerable<Inscricao>> GetAllInscricao();
         Task<bool> DeletarInscricao(Guid id);
         Task<Inscricao> AtualizarInscricao(Guid id, InscricaoModel inscricao);
+        Task<IEnumerable<Inscricao>> GetInscicoesCPF(string cpf);
+        Task<IEnumerable<Inscricao>> GetInscicoesOferta(Guid id);
+
     }
 }

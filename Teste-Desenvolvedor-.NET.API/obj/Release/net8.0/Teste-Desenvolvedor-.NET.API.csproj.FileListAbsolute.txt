@@ -1,0 +1,7 @@
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Release\net8.0\Teste-Desenvolvedor-.NET.API.sourcelink.json

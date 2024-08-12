@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Models.deps.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Models.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Models.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Models.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\refint\Teste-Desenvolvedor-.NET.Models.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Models.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Models\obj\Release\net8.0\ref\Teste-Desenvolvedor-.NET.Models.dll

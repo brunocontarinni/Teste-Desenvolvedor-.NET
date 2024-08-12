@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.deps.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\bin\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\refint\Teste-Desenvolvedor-.NET.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\Teste-Desenvolvedor-.NET.Shared.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Shared\obj\Release\net8.0\ref\Teste-Desenvolvedor-.NET.Shared.dll

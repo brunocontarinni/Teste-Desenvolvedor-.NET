@@ -119,6 +119,47 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         }
 
 
+        /// <summary>
+        /// Retornar uma lista de Inscrições por CPF
+        /// </summary>
+        /// <returns>IActionResult</returns>
+        /// <param name="cpf">Objeto para a encontrar o Lead</param>
+        /// <response code="200">Se a Inscrição foi encontrada </response>
+        /// <response code="404">Se o CPF não foi encontrado</response>
+        [HttpGet("/cpf/{cpf}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetInscicoesCpf(string cpf)
+        {
+            var inscricoes = await _inscricaoService.GetInscicoesCPF(cpf);
+
+            if(inscricoes == null)
+            {
+                return NotFound();
+            }
+            return Ok(inscricoes);
+        }
+
+        /// <summary>
+        /// Retornar uma lista de Inscrições por Oferta
+        /// </summary>
+        /// <param name="id">Objeto para a encontrar a Oferta</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="200">Se a Inscrição foi encontrada </response>
+        /// <response code="404">Se a Oferta não foi encontrado</response>
+        [HttpGet("/oferta/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetInscicoesOferta(Guid id)
+        {
+            var inscricoes = await _inscricaoService.GetInscicoesOferta(id);
+            if (inscricoes == null)
+            {
+                return NotFound();
+            }
+            return Ok(inscricoes);
+        }
+
 
     }
 }

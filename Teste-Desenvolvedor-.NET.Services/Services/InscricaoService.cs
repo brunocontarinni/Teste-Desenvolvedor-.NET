@@ -78,6 +78,26 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
             return await _dbContext.Inscricoes.ToListAsync();
         }
 
+        public async Task<IEnumerable<Inscricao>> GetInscicoesCPF(string cpf)
+        {
+            var lead = await _dbContext.Leads.Where(x => x.Deleted == false).FirstOrDefaultAsync(x => x.CPF == cpf);
+            if (lead == null)
+            {
+                return null;
+            }
+
+            var inscricoes = await _dbContext.Inscricoes.Where(x => x.Deleted == false)
+                .Where(x => x.IdLead == lead.Id).ToListAsync();
+
+            return inscricoes;
+        }
+
+        public async Task<IEnumerable<Inscricao>> GetInscicoesOferta(Guid id)
+        {
+            var inscricoes =await  _dbContext.Inscricoes.Where(x => x.Deleted == false)
+                .Where(x => x.IdOferta == id).ToListAsync();
+        }
+
         public async Task<Inscricao> GetInscricao(Guid id)
         {
             return await _dbContext.Inscricoes.Where(x => x.Deleted == false)
