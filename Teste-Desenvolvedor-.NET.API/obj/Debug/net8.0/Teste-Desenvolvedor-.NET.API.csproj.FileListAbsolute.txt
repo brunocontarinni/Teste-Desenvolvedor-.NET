@@ -109,3 +109,10 @@ C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.API.pdb
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.API.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\obj\Debug\net8.0\ref\Teste-Desenvolvedor-.NET.API.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Data.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Domain.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Data.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Domain.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.API\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Shared.pdb

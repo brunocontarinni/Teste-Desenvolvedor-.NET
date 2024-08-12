@@ -18,6 +18,8 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             ProcessoSeletivo = processoSeletivo;
         }
 
+        private Inscricao() { }
+
         public string Nome { get; private set; }
         public DateTime Data { get; private set; }
         public int Status { get; private set; }

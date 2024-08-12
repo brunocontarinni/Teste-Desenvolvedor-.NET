@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -873,10 +889,71 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Teste-Desenvolvedor-.NET.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "Teste-Desenvolvedor-.NET.Models": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Domain.dll": {}
+        }
+      },
+      "Teste-Desenvolvedor-.NET.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Models.dll": {}
+        }
+      },
+      "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -2295,6 +2372,21 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Teste-Desenvolvedor-.NET.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Teste-Desenvolvedor-.NET.Domain/Teste-Desenvolvedor-.NET.Domain.csproj",
+      "msbuildProject": "../Teste-Desenvolvedor-.NET.Domain/Teste-Desenvolvedor-.NET.Domain.csproj"
+    },
+    "Teste-Desenvolvedor-.NET.Models/1.0.0": {
+      "type": "project",
+      "path": "../Teste-Desenvolvedor-.NET.Models/Teste-Desenvolvedor-.NET.Models.csproj",
+      "msbuildProject": "../Teste-Desenvolvedor-.NET.Models/Teste-Desenvolvedor-.NET.Models.csproj"
+    },
+    "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Teste-Desenvolvedor-.NET.Shared/Teste-Desenvolvedor-.NET.Shared.csproj",
+      "msbuildProject": "../Teste-Desenvolvedor-.NET.Shared/Teste-Desenvolvedor-.NET.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2302,7 +2394,8 @@
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 8.0.2"
+      "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
+      "Teste-Desenvolvedor-.NET.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2337,7 +2430,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

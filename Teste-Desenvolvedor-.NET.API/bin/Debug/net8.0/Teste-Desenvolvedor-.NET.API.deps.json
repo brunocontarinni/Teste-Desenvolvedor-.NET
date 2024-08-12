@@ -13,11 +13,24 @@
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
           "Swashbuckle.AspNetCore": "6.4.0",
+          "Teste-Desenvolvedor-.NET.Data": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Domain": "1.0.0",
           "Teste-Desenvolvedor-.NET.Models": "1.0.0",
           "Teste-Desenvolvedor-.NET.Services": "1.0.0"
         },
         "runtime": {
           "Teste-Desenvolvedor-.NET.API.dll": {}
+        }
+      },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
         }
       },
       "Humanizer.Core/2.14.1": {
@@ -541,6 +554,30 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
+      "Teste-Desenvolvedor-.NET.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "Teste-Desenvolvedor-.NET.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Teste-Desenvolvedor-.NET.Data.dll": {}
+        }
+      },
+      "Teste-Desenvolvedor-.NET.Domain/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "Teste-Desenvolvedor-.NET.Models": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Teste-Desenvolvedor-.NET.Domain.dll": {}
+        }
+      },
       "Teste-Desenvolvedor-.NET.Models/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
@@ -559,6 +596,15 @@
         "runtime": {
           "Teste-Desenvolvedor-.NET.Services.dll": {}
         }
+      },
+      "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+        },
+        "runtime": {
+          "Teste-Desenvolvedor-.NET.Shared.dll": {}
+        }
       }
     }
   },
@@ -567,6 +613,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -897,12 +950,27 @@
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
+    "Teste-Desenvolvedor-.NET.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Teste-Desenvolvedor-.NET.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Teste-Desenvolvedor-.NET.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Teste-Desenvolvedor-.NET.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

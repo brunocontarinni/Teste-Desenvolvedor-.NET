@@ -12,6 +12,9 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             VagasDisponiveis = vagasDisponiveis;
             IsValid();
         }
+
+        private Oferta() { }
+
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
         public int VagasDisponiveis { get; private set; }

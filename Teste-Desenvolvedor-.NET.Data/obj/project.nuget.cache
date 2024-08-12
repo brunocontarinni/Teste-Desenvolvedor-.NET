@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QmNP+HmxPHw=",
+  "dgSpecHash": "8J1e5YvT3tE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Data\\Teste-Desenvolvedor-.NET.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Guilherme\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\Guilherme\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

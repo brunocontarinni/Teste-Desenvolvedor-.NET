@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Teste_Desenvolvedor_.NET.Domain.Profiles;
+using Teste_Desenvolvedor_.NET.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,12 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
+var connectionStringSQL = builder.Configuration.GetConnectionString("MySQL");
+
+builder.Services.AddDbContext<DBContext>(opts =>
+{
+    opts.UseMySql(connectionStringSQL, ServerVersion.AutoDetect(connectionStringSQL));
+});
 
 builder.Services.AddAutoMapper(typeof(TesteProfiles));
 

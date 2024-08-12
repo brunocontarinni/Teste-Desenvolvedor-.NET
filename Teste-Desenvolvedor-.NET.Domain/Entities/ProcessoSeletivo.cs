@@ -14,6 +14,8 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             IsValid();
         }
 
+        private ProcessoSeletivo() { }
+
         public string Nome { get; private set; }
         public DateOnly DataInicio { get; private set; }
         public DateOnly DataTermino { get; private set; }
