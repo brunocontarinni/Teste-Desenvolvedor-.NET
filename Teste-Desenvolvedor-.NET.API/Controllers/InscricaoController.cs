@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Teste_Desenvolvedor_.NET.Models.Models;
+using Teste_Desenvolvedor_.NET.Services.Interfaces;
 
 namespace Teste_Desenvolvedor_.NET.API.Controllers
 {
@@ -7,6 +8,14 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
     [Route("api/v1/inscicao")]
     public class InscricaoController : Controller
     {
+
+        private readonly IInscricaoService _inscricaoService;
+
+        public InscricaoController(IInscricaoService inscricaoService)
+        {
+            _inscricaoService = inscricaoService;
+        }
+
         /// <summary>
         /// Adicionar uma Inscrição
         /// </summary>
@@ -19,7 +28,14 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AdicionarInscricao([FromBody] InscricaoModel model)
         {
-            return Ok();
+            var inscricao = await _inscricaoService.AdicionarInscricao(model);
+
+            if(inscricao.Notificacao.Any())
+            {
+                return BadRequest(inscricao.Notificacao);
+            }
+
+            return Ok(inscricao);
         }
 
         /// <summary>
@@ -27,13 +43,19 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         /// </summary>
         /// <returns>IActionResult</returns>
         /// <response code="200">Se a Inscrição foi encontrada </response>
-        /// <response code="400">Se a Inscrição não foi encontrada</response>
+        /// <response code="404">Se a Inscrição não foi encontrada</response>
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetInscicao(Guid id)
         {
-            return Ok();
+            var inscricao = await _inscricaoService.GetInscricao(id);
+            if(inscricao == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(inscricao);
         }
 
         /// <summary>
@@ -45,7 +67,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllInscicao()
         {
-            return Ok();
+            return Ok(await _inscricaoService.GetAllInscricao());
         }
 
         /// <summary>
@@ -53,27 +75,47 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         /// </summary>
         /// <returns>IActionResult</returns>
         /// <response code="204">Se a Inscrição foi Deletada </response>
-        /// <response code="400">Se a Inscrição não foi encontrada</response>
+        /// <response code="404">Se a Inscrição não foi encontrada</response>
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteInscicao(Guid id)
         {
-            return Ok();
+            var deletado = await _inscricaoService.DeletarInscricao(id);
+            
+            if (deletado)
+                return NoContent();
+
+            return NotFound();
         }
 
         /// <summary>
         /// Atualizar uma Inscrição
         /// </summary>
+        /// <param name="model">Objeto para a Atualizacao de uma Inscrição</param>
+        /// <param name="id">Objeto para a encontrar a Inscição</param>
         /// <returns>IActionResult</returns>
         /// <response code="204">Se a Inscrição foi Aualizada </response>
         /// <response code="400">Se a Inscrição não foi encontrada</response>
+        /// <response code="404">Se o Lead não foi encontrado</response>
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> PutInscicao([FromBody]InscricaoModel model, Guid id)
         {
-            return Ok();
+            var inscricao = await _inscricaoService.AtualizarInscricao(id, model);
+            if(inscricao == null)
+            {
+                return NotFound();
+            }
+            if(inscricao.Notificacao.Any())
+            {
+                return BadRequest(inscricao.Notificacao);
+            }
+
+            return NoContent();
+
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Teste_Desenvolvedor_.NET.Models.Models;
+using Teste_Desenvolvedor_.NET.Services.Interfaces;
 
 namespace Teste_Desenvolvedor_.NET.API.Controllers
 {
@@ -7,6 +8,13 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
     [Route("api/v1/processo-seletivo")]
     public class ProcessoSeletivoController : Controller
     {
+        private readonly IProcessoSeletivoService _processoSeletivoService;
+
+        public ProcessoSeletivoController(IProcessoSeletivoService processoSeletivoService)
+        {
+            _processoSeletivoService = processoSeletivoService;
+        }
+
         /// <summary>
         /// Adicionar um Processo Seletivo
         /// </summary>
@@ -19,7 +27,13 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AdicionarProcessoSeletivo([FromBody] ProcessoSeletivoModel model)
         {
-            return Ok();
+            var processo = await _processoSeletivoService.AdicionarProcessoSeletivo(model);
+            
+            if(processo.Notificacao.Any())
+            {
+                return BadRequest(processo.Notificacao);
+            }
+            return Ok(processo);
         }
 
         /// <summary>
@@ -34,7 +48,13 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetProcessoSeletivo(Guid id)
         {
-            return Ok();
+            var processo = await _processoSeletivoService.GetProcessoSeletivo(id);
+            
+            if (processo == null)
+            {
+                return NotFound();
+            }
+            return Ok(processo);
         }
 
         /// <summary>
@@ -46,7 +66,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllProcessoSeletivo()
         {
-            return Ok();
+            return Ok(await _processoSeletivoService.GetAllProcessoSeletivo());
         }
 
         /// <summary>
@@ -61,7 +81,10 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteProcessoSeletivo(Guid id)
         {
-            return Ok();
+            var deletado = await _processoSeletivoService.DeletarProcessoSeletivo(id);
+            if (deletado)
+                return NoContent();
+            return NotFound();
         }
 
         /// <summary>
@@ -79,7 +102,19 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PutProcessoSeletivo([FromBody] ProcessoSeletivoModel model, Guid id)
         {
-            return Ok();
+            var processo = await _processoSeletivoService.AtualizarProcessoSeletivo(id, model);
+
+            if (processo == null)
+            {
+                return NotFound();
+            }
+            if (processo.Notificacao.Any())
+            {
+                return BadRequest(processo.Notificacao);
+            }
+            
+            return NoContent();
+
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Teste_Desenvolvedor_.NET.Models.Models;
+using Teste_Desenvolvedor_.NET.Services.Interfaces;
 
 namespace Teste_Desenvolvedor_.NET.API.Controllers
 {
@@ -7,6 +8,13 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
     [Route("api/v1/lead")]
     public class LeadController : Controller
     {
+
+        private readonly ILeadService _leadService;
+
+        public LeadController(ILeadService leadService)
+        {
+            _leadService = leadService;
+        }
 
         /// <summary>
         /// Adicionar um Lead
@@ -20,7 +28,14 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AdicionarLead([FromBody] LeadModel model)
         {
-            return Ok();
+            var lead = await _leadService.AdicionarLead(model);
+
+            if(lead.Notificacao.Any())
+            {
+                return BadRequest(lead.Notificacao);
+            }
+
+            return Ok(lead);
         }
 
         /// <summary>
@@ -35,7 +50,14 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetLead(Guid id)
         {
-            return Ok();
+            var lead = await _leadService.GetLead(id);
+
+            if(lead == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(lead);
         }
 
         /// <summary>
@@ -47,7 +69,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllLead()
         {
-            return Ok();
+            return Ok(await _leadService.GetAllLead());
         }
 
         /// <summary>
@@ -62,7 +84,11 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteLead(Guid id)
         {
-            return Ok();
+           var deletado = await _leadService.DeletarLead(id);
+            if(deletado)
+                return NoContent();
+
+            return NotFound();
         }
 
         /// <summary>
@@ -80,7 +106,18 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PutLead([FromBody] LeadModel model, Guid id)
         {
-            return Ok();
+            var lead = await _leadService.AtualizarLead(id, model);
+            if(lead == null)
+            {
+                return NotFound();
+            }
+
+            if(lead.Notificacao.Any())
+            {
+                return BadRequest(lead.Notificacao);
+            }
+
+            return NoContent();
         }
     }
 }

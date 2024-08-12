@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Teste_Desenvolvedor_.NET.Models.Models;
+using Teste_Desenvolvedor_.NET.Services.Interfaces;
 
 namespace Teste_Desenvolvedor_.NET.API.Controllers
 {
@@ -7,6 +8,12 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
     [Route("api/v1/oferta")]
     public class OfertaController : Controller
     {
+        private readonly IOfertaService _ofertaService;
+
+        public OfertaController(IOfertaService ofertaService)
+        {
+            _ofertaService = ofertaService;
+        }
 
         /// <summary>
         /// Adicionar uma Oferta
@@ -20,7 +27,14 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> AdicionarOferta([FromBody] OfertaModel model)
         {
-            return Ok();
+            var oferta = await _ofertaService.AdicionarOferta(model);
+
+            if(oferta.Notificacao.Any())
+            {
+                return BadRequest(oferta.Notificacao);
+            }
+
+            return Ok(oferta);
         }
 
         /// <summary>
@@ -33,9 +47,16 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> GetOfertao(Guid id)
+        public async Task<IActionResult> GetOferta(Guid id)
         {
-            return Ok();
+            var oferta = await _ofertaService.GetOferta(id);
+            
+            if(oferta == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(oferta);
         }
 
         /// <summary>
@@ -47,7 +68,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllOfertas()
         {
-            return Ok();
+            return Ok(await _ofertaService.GetAllOferta());
         }
 
         /// <summary>
@@ -62,7 +83,11 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeleteOferta(Guid id)
         {
-            return Ok();
+            var deletado = await _ofertaService.DeletarOferta(id);
+            if (deletado)
+                return NoContent();
+
+            return NotFound();
         }
 
         /// <summary>
@@ -80,7 +105,18 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> PutOferta([FromBody] OfertaModel model, Guid id)
         {
-            return Ok();
+            var oferta = await _ofertaService.AtualizarOferta(id, model);
+
+            if(oferta == null)
+            {
+                return NotFound();
+            }
+            if(oferta.Notificacao.Any())
+            {
+                return BadRequest(oferta.Notificacao);
+            }
+
+            return NoContent();
         }
     }
 }
