@@ -57,10 +57,15 @@ public class OfertaService : IOfertaService
 
 	public async Task<DeleteOfertaResponseDTO> DeleteOferta(int ofertaId)
 	{
-		Oferta? oferta = await _ofertaRepository.GetByIdAsync(ofertaId);
+		Oferta? oferta = await _ofertaRepository.GetByIdWithInscricoes(ofertaId);
 		if (oferta == null)
 		{
 			throw new OfertaNotFoundException(MessageKeyConstants.MESSAGE_ERROR_OFERTA_NOT_FOUND);
+		}
+
+		if (oferta.Inscricoes.Any())
+		{
+			throw new OfertaException(MessageKeyConstants.MESSAGE_ERROR_OFERTA_HAS_INSCRICOES);
 		}
 
 		await _ofertaRepository.DeleteAsync(oferta);

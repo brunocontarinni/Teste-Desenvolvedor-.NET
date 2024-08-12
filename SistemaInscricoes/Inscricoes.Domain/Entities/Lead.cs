@@ -8,5 +8,5 @@ public class Lead
 	public string? Telefone { get; set; }
 	public string? CPF { get; set; }
 
-	public virtual ICollection<Inscricao>? Inscricoes { get; set; }
+	public virtual ICollection<Inscricao> Inscricoes { get; set; } = new List<Inscricao>();
 }

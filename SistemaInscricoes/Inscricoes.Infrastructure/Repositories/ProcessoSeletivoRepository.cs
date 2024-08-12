@@ -17,4 +17,13 @@ public class ProcessoSeletivoRepository : BaseRepository<ProcessoSeletivo>, IPro
 			.AsNoTracking()
 			.FirstOrDefaultAsync(l => l.Nome == nome);
 	}
+
+	public async Task<ProcessoSeletivo?> GetByIdWithInscricoes(int processoSeletivoId)
+	{
+		return await _context.ProcessosSeletivos
+			.Where(p => p.ProcessoSeletivoId == processoSeletivoId)
+			.Include(p => p.Inscricoes)
+			.AsNoTracking()
+			.FirstOrDefaultAsync();
+	}
 }

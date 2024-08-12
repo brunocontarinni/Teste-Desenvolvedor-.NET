@@ -15,7 +15,8 @@ public class OfertaRepository : BaseRepository<Oferta>, IOfertaRepository
 	{
 		return await _context.Ofertas
 			.Where(o => o.OfertaId == ofertaId)
-			.Include(o => o.Inscricoes)
+			.Include(o => o.Inscricoes) 
+			.AsNoTracking()
 			.FirstOrDefaultAsync();
 	}
 }

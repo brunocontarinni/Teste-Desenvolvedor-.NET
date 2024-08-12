@@ -24,4 +24,13 @@ public class LeadRepository : BaseRepository<Lead>, ILeadRepository
 			.AsNoTracking()
 			.FirstOrDefaultAsync(l => l.Email == email);
 	}
+
+	public async Task<Lead?> GetByIdWithInscricoes(int leadId)
+	{
+		return await _context.Leads
+			.Where(l => l.LeadId == leadId)
+			.Include(l => l.Inscricoes)
+			.AsNoTracking()
+			.FirstOrDefaultAsync();
+	}
 }

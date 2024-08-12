@@ -7,5 +7,5 @@ public class ProcessoSeletivo
 	public DateTime DataInicio { get; set; }
 	public DateTime DataTermino { get; set; }
 
-	public virtual ICollection<Inscricao>? Inscricoes { get; set; } = new List<Inscricao>();
+	public virtual ICollection<Inscricao> Inscricoes { get; set; } = new List<Inscricao>();
 }

@@ -75,10 +75,14 @@ public class LeadService : ILeadService
 
 	public async Task<DeleteLeadResponseDTO> DeleteLead(int leadId)
 	{
-		Lead? lead = await _leadRepository.GetByIdAsync(leadId);
+		Lead? lead = await _leadRepository.GetByIdWithInscricoes(leadId);
 		if (lead == null)
 		{
 			throw new LeadNotFoundException(MessageKeyConstants.MESSAGE_ERROR_LEAD_NOT_FOUND);
+		}
+		if (lead.Inscricoes.Any())
+		{
+			throw new LeadException(MessageKeyConstants.MESSAGE_ERROR_LEAD_HAS_INSCRICOES);
 		}
 
 		await _leadRepository.DeleteAsync(lead);

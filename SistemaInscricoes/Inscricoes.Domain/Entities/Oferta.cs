@@ -7,5 +7,5 @@ public class Oferta
 	public string? Descricao { get; set; }
 	public int VagasDisponiveis { get; set; }
 
-	public virtual ICollection<Inscricao>? Inscricoes { get; set; } = new List<Inscricao>();
+	public virtual ICollection<Inscricao> Inscricoes { get; set; } = new List<Inscricao>();
 }

@@ -24,6 +24,7 @@ public static class MessageKeyConstants
 	public const string MESSAGE_ERROR_LEAD_NOT_FOUND = "message.error.leadNotFound";
 	public const string MESSAGE_ERROR_LEAD_CPF_ALREADY_EXISTS = "message.error.leadCpfAlreadyExists";
 	public const string MESSAGE_ERROR_LEAD_EMAIL_ALREADY_EXISTS = "message.error.leadEmailAlreadyExists";
+	public const string MESSAGE_ERROR_LEAD_HAS_INSCRICOES = "message.error.leadHasInscricoes";
 
 	// Inscricao
 	public const string MESSAGE_ERROR_INSCRICAO_VALIDATE = "message.error.inscricaoValidate";
@@ -41,6 +42,7 @@ public static class MessageKeyConstants
 	public const string MESSAGE_ERROR_OFERTA_VAGAS_DISPONIVEIS_INVALID = "message.error.ofertaVagasDisponiveisInvalid";
 	public const string MESSAGE_ERROR_OFERTA_ALREADY_EXISTS = "message.error.ofertaAlreadyExists";
 	public const string MERSSAGE_ERROR_OFERTA_NO_VACANCIES = "message.error.ofertaNoVacancies";
+	public const string MESSAGE_ERROR_OFERTA_HAS_INSCRICOES = "message.error.ofertaHasInscricoes";
 
 	// Processo Seletivo
 	public const string MESSAGE_ERROR_PROCESSO_SELETIVO_VALIDATE = "message.error.processoSeletivoValidate";
@@ -51,4 +53,5 @@ public static class MessageKeyConstants
 	public const string MESSAGE_ERROR_PROCESSO_SELETIVO_DATE_INVALID = "message.error.processoSeletivoDateInvalid";
 	public const string MESSAGE_ERROR_PROCESSO_SELETIVO_ALREADY_EXISTS = "message.error.processoSeletivoAlreadyExists";
 	public const string MESSAGE_ERROR_PROCESSO_SELETIVO_NOT_OPEN = "message.error.processoSeletivoNotOpen";
+	public const string MESSAGE_ERROR_PROCESSO_SELETIVO_HAS_INSCRICOES = "message.error.processoSeletivoHasInscricoes";
 }

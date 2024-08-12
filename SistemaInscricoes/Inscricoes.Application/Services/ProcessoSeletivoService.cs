@@ -74,10 +74,15 @@ public class ProcessoSeletivoService : IProcessoSeletivoService
 
 	public async Task<DeleteProcessoSeletivoResponseDTO> DeleteProcessoSeletivo(int processoSeletivoId)
 	{
-		ProcessoSeletivo? processoSeletivo = await _processoSeletivoRepository.GetByIdAsync(processoSeletivoId);
+		ProcessoSeletivo? processoSeletivo = await _processoSeletivoRepository.GetByIdWithInscricoes(processoSeletivoId);
 		if (processoSeletivo == null)
 		{
 			throw new ProcessoSeletivoNotFoundException(MessageKeyConstants.MESSAGE_ERROR_PROCESSO_SELETIVO_NOT_FOUND);
+		}
+
+		if (processoSeletivo.Inscricoes.Any())
+		{
+			throw new ProcessoSeletivoException(MessageKeyConstants.MESSAGE_ERROR_PROCESSO_SELETIVO_HAS_INSCRICOES);
 		}
 
 		await _processoSeletivoRepository.DeleteAsync(processoSeletivo);
