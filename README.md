@@ -77,3 +77,7 @@ Para realizar a entrega do teste você deve:
 * Realize o pull request da sua branch nesse repositório
 
 Além do pull request você deve **gravar um vídeo de no máximo 30 minutos** mostrando o que foi desenvolvido, falando sobre as decisões que foram tomadas, as tecnologias utilizadas, arquitetura e tudo que você achar relevante. A facecam é opcional, mas é um extra desejável. Esse vídeo deve ser postado no youtube (pode ser não listado) e seu link deve estar no `README.md` do projeto.
+
+
+Link para o vídeo: https://youtu.be/gc6oePPxbts
+Link para a página do notion: https://patrickmdl.notion.site/CRM-Educational-96a007f9ef6248178cd735c3d86ee9ef?pvs=74
