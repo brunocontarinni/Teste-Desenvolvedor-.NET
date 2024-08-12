@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Profiles\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
@@ -23,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj" />
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Shared\Teste-Desenvolvedor-.NET.Shared.csproj" />
   </ItemGroup>
 

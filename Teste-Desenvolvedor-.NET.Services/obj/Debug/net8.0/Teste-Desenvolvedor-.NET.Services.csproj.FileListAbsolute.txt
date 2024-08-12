@@ -1,0 +1,15 @@
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.deps.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.runtimeconfig.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.csproj.AssemblyReference.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.sourcelink.json
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\refint\Teste-Desenvolvedor-.NET.Services.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.genruntimeconfig.cache
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\ref\Teste-Desenvolvedor-.NET.Services.dll

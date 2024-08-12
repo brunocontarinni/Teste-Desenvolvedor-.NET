@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Teste-Desenvolvedor-.NET.API</name>
+    </assembly>
+    <members>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.AdicionarInscricao(Teste_Desenvolvedor_.NET.Models.Models.InscricaoModel)">
+            <summary>
+            Adicionar uma Inscrição
+            </summary>
+            <param name="model">Objeto para a criãção de uma Inscrição</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se a Inscrição foi Criada </response>
+            <response code="400">Se a Inscrição não foi Criada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.GetInscicao(System.Guid)">
+            <summary>
+            Retornar Uma Inscrição
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se a Inscrição foi encontrada </response>
+            <response code="400">Se a Inscrição não foi encontrada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.GetAllInscicao">
+            <summary>
+            Retornar Todas as Inscrições
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se as Inscrições foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.DeleteInscicao(System.Guid)">
+            <summary>
+            Deletar uma Inscrição
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Se a Inscrição foi Deletada </response>
+            <response code="400">Se a Inscrição não foi encontrada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.PutInscicao(Teste_Desenvolvedor_.NET.Models.Models.InscricaoModel,System.Guid)">
+            <summary>
+            Atualizar uma Inscrição
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="204">Se a Inscrição foi Aualizada </response>
+            <response code="400">Se a Inscrição não foi encontrada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.AdicionarLead(Teste_Desenvolvedor_.NET.Models.Models.LeadModel)">
+            <summary>
+            Adicionar um Lead
+            </summary>
+            <param name="model">Objeto para a criãção de um Lead</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se o Lead foi Criado </response>
+            <response code="400">Se o Lead não foi Criado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.GetLead(System.Guid)">
+            <summary>
+            Retornar um Lead
+            </summary>
+            <param name="id">Objeto para a encontrar o Lead</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se o Lead foi encontrado </response>
+            <response code="404">Se o Lead não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.GetAllLead">
+            <summary>
+            Retorna todos os Leads
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se os Leads foram retornados </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.DeleteLead(System.Guid)">
+            <summary>
+            Deleta um Lead
+            </summary>
+            <param name="id">Objeto para a encontrar o Lead</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se o Lead foi Deletado </response>
+            <response code="404">Se o Lead não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.PutLead(Teste_Desenvolvedor_.NET.Models.Models.LeadModel,System.Guid)">
+            <summary>
+            Atualiza um Lead
+            </summary>
+            <param name="model">Objeto para a Atualizacao de um Lead</param>
+            <param name="id">Objeto para a encontrar o Lead</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se o Lead foi Aualizado </response>
+            <response code="404">Se o Lead não foi encontrado</response>
+            <response code="400">Se o Lead não foi Atualizado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.AdicionarOferta(Teste_Desenvolvedor_.NET.Models.Models.OfertaModel)">
+            <summary>
+            Adicionar uma Oferta
+            </summary>
+            <param name="model">Objeto para a criãção de uma Oferta</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se a Oferta foi Criada </response>
+            <response code="400">Se a Oferta não foi Criada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.GetOfertao(System.Guid)">
+            <summary>
+            Rertornar uma Oferta
+            </summary>
+            <returns>IActionResult</returns>
+            <param name="id">Objeto para a encontrar a Oferta</param>
+            <response code="200">Se a Oferta foi encontrada </response>
+            <response code="404">Se a Oferta não foi encontrada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.GetAllOfertas">
+            <summary>
+            Retorna todas as Ofertas
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se as Ofertas foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.DeleteOferta(System.Guid)">
+            <summary>
+            Deletar uma Oferta
+            </summary>
+            <param name="id">Objeto para a encontrar a Oferta</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se a Oferta foi Deletada </response>
+            <response code="404">Se a Oferta não foi encontrada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.PutOferta(Teste_Desenvolvedor_.NET.Models.Models.OfertaModel,System.Guid)">
+            <summary>
+            Atualiza uma Oferta
+            </summary>
+            <param name="model">Objeto para a Atualizacao de uma Oferta</param>
+            <param name="id">Objeto para a encontrar a Oferta</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se a Inscrição foi Aualizada </response>
+            <response code="400">Se a Inscrição não foi Encontrada</response>
+            <response code="404">Se a Inscrição não foi Atualizada</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.ProcessoSeletivoController.AdicionarProcessoSeletivo(Teste_Desenvolvedor_.NET.Models.Models.ProcessoSeletivoModel)">
+            <summary>
+            Adicionar um Processo Seletivo
+            </summary>
+            <param name="model">Objeto para a criãção de um Processo Seletivo</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se o Processo Seletivo foi Criado </response>
+            <response code="400">Se o Processo Seletivo não foi Criado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.ProcessoSeletivoController.GetProcessoSeletivo(System.Guid)">
+            <summary>
+            Retornar um Processo Seletivo
+            </summary>
+            <param name="id">Objeto para a encontrar o Processo Seletivo</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se o Processo Seletivo foi encontrado </response>
+            <response code="404">Se o Processo Seletivo não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.ProcessoSeletivoController.GetAllProcessoSeletivo">
+            <summary>
+            Retorna todos os Processo Seletivos
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se os Processos Seletivos foram retornados </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.ProcessoSeletivoController.DeleteProcessoSeletivo(System.Guid)">
+            <summary>
+            Deleta um Processo Seletivo
+            </summary>
+            <param name="id">Objeto para a encontrar o Processo Seletivo</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se o Processo Seletivo foi Deletado </response>
+            <response code="404">Se o Processo Seletivo não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.ProcessoSeletivoController.PutProcessoSeletivo(Teste_Desenvolvedor_.NET.Models.Models.ProcessoSeletivoModel,System.Guid)">
+            <summary>
+            Atualiza um Processo Seletivo
+            </summary>
+            <param name="model">Objeto para a Atualizacao de um Processo Seletivo</param>
+            <param name="id">Objeto para a encontrar o Processo Seletivo</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se o Processo Seletivo foi Aualizado </response>
+            <response code="404">Se o Processo Seletivo não foi encontrado</response>
+            <response code="400">Se o Processo Seletivo não foi Atualizado</response>
+        </member>
+    </members>
+</doc>

@@ -3,7 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\teste-desenvolvedor-.net.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:teste-desenvolvedor-.net.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\profiles\\testeprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\controllers\\processoseletivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:controllers\\processoseletivocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\controllers\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:controllers\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:controllers\\ofertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\controllers\\inscricaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:controllers\\inscricaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}|..\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.models\\models\\ofertamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}|..\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.models\\models\\processoseletivomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\processoseletivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -12,17 +42,22 @@
       "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}|..\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.models\\models\\leadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6530DB36-22F7-42AA-BE6F-D651F304C4FD}|..\\Teste-Desenvolvedor-.NET.Data\\Teste-Desenvolvedor-.NET.Data.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.data\\repositories\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}|..\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.models\\models\\inscricaomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAA1E059-10DC-466F-8917-5B6E7F64FEC5}|..\\Teste-Desenvolvedor-.NET.Shared\\Teste-Desenvolvedor-.NET.Shared.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.shared\\entities\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B9C980-5C98-44E3-8381-59096A877FF8}|Teste-Desenvolvedor-.NET.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\lead.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}|..\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.domain\\entities\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6530DB36-22F7-42AA-BE6F-D651F304C4FD}|..\\Teste-Desenvolvedor-.NET.Data\\Teste-Desenvolvedor-.NET.Data.csproj|c:\\users\\guilherme\\documents\\github\\teste-desenvolvedor-.net\\teste-desenvolvedor-.net.data\\repositories\\mysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,76 +67,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TesteProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Profiles\\TesteProfiles.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Profiles\\TesteProfiles.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Profiles\\TesteProfiles.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Profiles\\TesteProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T19:23:07.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessoSeletivoController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\ProcessoSeletivoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProcessoSeletivoController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\ProcessoSeletivoController.cs",
+              "RelativeToolTip": "Controllers\\ProcessoSeletivoController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:32:07.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeadController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\LeadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LeadController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\LeadController.cs",
+              "RelativeToolTip": "Controllers\\LeadController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowEcAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:31:35.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InscricaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\InscricaoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InscricaoController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\InscricaoController.cs",
+              "RelativeToolTip": "Controllers\\InscricaoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:31:20.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProcessoSeletivoModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\ProcessoSeletivoModel.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\ProcessoSeletivoModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\ProcessoSeletivoModel.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\ProcessoSeletivoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:20:39.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T17:28:15.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Teste-Desenvolvedor-.NET.API",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Teste-Desenvolvedor-.NET.API.csproj",
+              "RelativeDocumentMoniker": "Teste-Desenvolvedor-.NET.API.csproj",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Teste-Desenvolvedor-.NET.API.csproj",
+              "RelativeToolTip": "Teste-Desenvolvedor-.NET.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T18:36:17.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OfertaController.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\OfertaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OfertaController.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Controllers\\OfertaController.cs",
+              "RelativeToolTip": "Controllers\\OfertaController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:31:49.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OfertaModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\OfertaModel.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\OfertaModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\OfertaModel.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\OfertaModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:20:25.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LeadModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\LeadModel.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\LeadModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\LeadModel.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\LeadModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:20:10.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InscricaoModel.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\InscricaoModel.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\InscricaoModel.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Models\\InscricaoModel.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Models\\Models\\InscricaoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T18:20:02.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Inscricao.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Inscricao.cs",
               "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Inscricao.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Inscricao.cs",
               "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Inscricao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBwAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T17:49:14.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Oferta.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
-              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
-              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBMAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:48:16.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "Lead.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Lead.cs",
               "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Lead.cs",
               "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Lead.cs",
               "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Lead.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCAAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T17:47:35.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProcessoSeletivo.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
-              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
-              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAA1wB0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:46:42.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MySqlContext.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
-              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
-              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:46:24.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "Entity.cs",
               "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Shared\\Entities\\Entity.cs",
               "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Shared\\Entities\\Entity.cs",
@@ -114,15 +253,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "DocumentIndex": 10,
+              "Title": "Oferta.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\Oferta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:28:15.44Z",
+              "WhenOpened": "2024-08-12T17:48:16.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProcessoSeletivo.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Domain\\Entities\\ProcessoSeletivo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T17:46:42.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MySqlContext.cs",
+              "DocumentMoniker": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
+              "RelativeDocumentMoniker": "..\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
+              "ToolTip": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
+              "RelativeToolTip": "..\\Teste-Desenvolvedor-.NET.Data\\Repositories\\MySqlContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T17:46:24.769Z",
               "EditorCaption": ""
             }
           ]
