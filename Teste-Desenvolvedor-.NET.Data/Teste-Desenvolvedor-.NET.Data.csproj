@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Domain\Teste-Desenvolvedor-.NET.Domain.csproj" />
+    <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj" />
   </ItemGroup>
 
 </Project>

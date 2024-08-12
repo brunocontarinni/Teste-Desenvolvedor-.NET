@@ -41,7 +41,10 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             if(VagasDisponiveis < 1)
                 Notificacao.Add("Vagas disponíveis deve ser maior que 0");
         }
-
+        public void AddNotification(string key, string message)
+        {
+            Notificacao.Add(key + " - " + message);
+        }
 
 
     }

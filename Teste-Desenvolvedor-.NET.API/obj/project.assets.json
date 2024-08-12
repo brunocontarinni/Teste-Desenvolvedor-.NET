@@ -984,7 +984,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
-          "Teste-Desenvolvedor-.NET.Domain": "1.0.0"
+          "Teste-Desenvolvedor-.NET.Domain": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Teste-Desenvolvedor-.NET.Data.dll": {}
@@ -1031,7 +1032,10 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "Teste-Desenvolvedor-.NET.Data": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Domain": "1.0.0",
+          "Teste-Desenvolvedor-.NET.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Teste-Desenvolvedor-.NET.Services.dll": {}

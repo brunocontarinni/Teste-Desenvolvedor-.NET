@@ -40,5 +40,10 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
                 Notificacao.Add("Data de início deve ser menor que a data de término");
             
         }
+
+        public void AddNotification(string key, string message)
+        {
+            Notificacao.Add(key + " - " + message);
+        }
     }
 }

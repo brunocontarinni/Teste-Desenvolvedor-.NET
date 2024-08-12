@@ -2395,7 +2395,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
-      "Teste-Desenvolvedor-.NET.Domain >= 1.0.0"
+      "Teste-Desenvolvedor-.NET.Domain >= 1.0.0",
+      "Teste-Desenvolvedor-.NET.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2433,6 +2434,9 @@
           "projectReferences": {
             "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj": {
               "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Domain\\Teste-Desenvolvedor-.NET.Domain.csproj"
+            },
+            "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Models\\Teste-Desenvolvedor-.NET.Models.csproj"
             }
           }
         }

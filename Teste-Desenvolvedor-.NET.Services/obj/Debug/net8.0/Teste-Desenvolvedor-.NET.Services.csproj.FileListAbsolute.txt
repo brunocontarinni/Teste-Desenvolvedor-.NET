@@ -13,3 +13,12 @@ C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.pdb
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-Desenvolvedor-.NET.Services.genruntimeconfig.cache
 C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\ref\Teste-Desenvolvedor-.NET.Services.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Data.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Domain.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Models.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Shared.dll
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Data.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Domain.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Models.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\bin\Debug\net8.0\Teste-Desenvolvedor-.NET.Shared.pdb
+C:\Users\Guilherme\Documents\GitHub\Teste-Desenvolvedor-.NET\Teste-Desenvolvedor-.NET.Services\obj\Debug\net8.0\Teste-De.95AD86B5.Up2Date

@@ -3,6 +3,8 @@ using Microsoft.OpenApi.Models;
 using System.Reflection;
 using Teste_Desenvolvedor_.NET.Domain.Profiles;
 using Teste_Desenvolvedor_.NET.Data.Repositories;
+using Teste_Desenvolvedor_.NET.Services.Interfaces;
+using Teste_Desenvolvedor_.NET.Services.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Teste Tecnico", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Teste Técnico", Version = "v1" });
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     c.IncludeXmlComments(xmlPath);
@@ -27,6 +29,10 @@ builder.Services.AddDbContext<DBContext>(opts =>
 });
 
 builder.Services.AddAutoMapper(typeof(TesteProfiles));
+builder.Services.AddScoped<ILeadService, LeadService>();
+builder.Services.AddScoped<IOfertaService, OfertaServices>();
+builder.Services.AddScoped<IProcessoSeletivoService, ProcessoSeletivoService>();
+builder.Services.AddScoped<IInscricaoService, InscricaoService>();
 
 var app = builder.Build();
 

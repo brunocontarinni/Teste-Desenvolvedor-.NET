@@ -48,5 +48,9 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
                 Notificacao.Add("CPF do lead deve ter no mínimo 3 caracteres");
             
         }
+        public void AddNotificacao(string key, string message)
+        {
+            Notificacao.Add(key + " - " + message);
+        }
     }
 }
