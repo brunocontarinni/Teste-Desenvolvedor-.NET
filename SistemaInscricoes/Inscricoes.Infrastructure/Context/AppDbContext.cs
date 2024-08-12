@@ -32,5 +32,13 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
 			.HasOne(i => i.Oferta)
 			.WithMany(o => o.Inscricoes)
 			.HasForeignKey(i => i.OfertaId);
+
+		modelBuilder.Entity<Lead>()
+			.HasIndex(l => l.CPF)
+			.IsUnique();
+
+		modelBuilder.Entity<Inscricao>()
+			.HasIndex(i => i.NumeroInscricao)
+			.IsUnique();
 	}
 }
