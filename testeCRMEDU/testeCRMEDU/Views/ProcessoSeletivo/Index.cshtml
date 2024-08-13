@@ -1,0 +1,40 @@
+﻿@model List<ProcessoSeletivo>
+@{
+}
+
+<h2 class="text-center mb-5">Lista de Processos Seletivos</h2>
+
+<div class="row mb-5">
+    <div class="col">
+        <a class="btn btn-primary" asp-controller="ProcessoSeletivo" asp-action="Create">Novo Processo Seletivo</a>
+    </div>
+    <div class="col">
+
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Data de Início</th>
+            <th>Data de Término</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+        <tr>
+            <td>@item.Id </td>
+            <td>@item.Nome </td>
+            <td>@item.DataInicio</td>
+            <td>@item.DataTermino</td>
+            <td  style="white-space:nowrap">
+                <a class="btn btn-primary btn-sm" asp-controller="ProcessoSeletivo" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-danger btn-sm" asp-controller="ProcessoSeletivo" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

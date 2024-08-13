@@ -1,0 +1,79 @@
+﻿@model Inscricao
+@{
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-3">
+        <h2 class="text-center mb-5">Nova Inscrição</h2>
+
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Id</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Id">
+                    <span asp-validation-for="Id" class="text-danger"> </span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Número da Inscrição</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="NumeroInscricao">
+                    <span asp-validation-for="NumeroInscricao" class="text-danger"> </span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Data</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Data" />
+                    <span asp-validation-for="Data" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Status</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Status" />
+                    <span asp-validation-for="Status" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Lead Id</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="LeadId" />
+                    <span asp-validation-for="LeadId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Processo Seletivo Id</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="ProcessoSeletivoId" />
+                    <span asp-validation-for="ProcessoSeletivoId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label">Oferta Id</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="OfertaId" />
+                    <span asp-validation-for="OfertaId" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offset-sml-u col-sm-4 d-grid">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col-sm-4 d-grid">
+                    <a class="btn btn-outline-primary" asp-controller="Inscricao" asp-action="Index" role="button">
+                        Voltar
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
