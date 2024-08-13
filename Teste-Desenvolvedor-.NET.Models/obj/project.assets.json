@@ -873,6 +873,20 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Teste-Desenvolvedor-.NET.Shared.dll": {}
+        }
       }
     }
   },
@@ -2295,13 +2309,19 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Teste-Desenvolvedor-.NET.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Teste-Desenvolvedor-.NET.Shared/Teste-Desenvolvedor-.NET.Shared.csproj",
+      "msbuildProject": "../Teste-Desenvolvedor-.NET.Shared/Teste-Desenvolvedor-.NET.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 8.0.2"
+      "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
+      "Teste-Desenvolvedor-.NET.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2336,7 +2356,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Shared\\Teste-Desenvolvedor-.NET.Shared.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Shared\\Teste-Desenvolvedor-.NET.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

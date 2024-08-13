@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.API", "Teste-Desenvolvedor-.NET.API.csproj", "{B7B9C980-5C98-44E3-8381-59096A877FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.API", "Teste-Desenvolvedor-.NET.API\Teste-Desenvolvedor-.NET.API.csproj", "{B7B9C980-5C98-44E3-8381-59096A877FF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1- Presentation", "1- Presentation", "{D6D17E9F-6DC4-47F9-B06F-801CAEB03545}"
 EndProject
@@ -17,15 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5- Models", "5- Models", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6- Sharerd", "6- Sharerd", "{7EAC8901-5B55-40AF-A24C-E00B75936A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.Data", "..\Teste-Desenvolvedor-.NET.Data\Teste-Desenvolvedor-.NET.Data.csproj", "{6530DB36-22F7-42AA-BE6F-D651F304C4FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.Data", "Teste-Desenvolvedor-.NET.Data\Teste-Desenvolvedor-.NET.Data.csproj", "{6530DB36-22F7-42AA-BE6F-D651F304C4FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.Domain", "..\Teste-Desenvolvedor-.NET.Domain\Teste-Desenvolvedor-.NET.Domain.csproj", "{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.Domain", "Teste-Desenvolvedor-.NET.Domain\Teste-Desenvolvedor-.NET.Domain.csproj", "{EE5EAC56-C103-448E-AAF2-175D39CD2FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.Services", "..\Teste-Desenvolvedor-.NET.Services\Teste-Desenvolvedor-.NET.Services.csproj", "{C6FB742E-B3AE-4489-9D68-258007B74CEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.Services", "Teste-Desenvolvedor-.NET.Services\Teste-Desenvolvedor-.NET.Services.csproj", "{C6FB742E-B3AE-4489-9D68-258007B74CEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.Models", "..\Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj", "{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.Models", "Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj", "{901FD900-2CC3-432F-8A9C-BE8C8BC3850F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste-Desenvolvedor-.NET.Shared", "..\Teste-Desenvolvedor-.NET.Shared\Teste-Desenvolvedor-.NET.Shared.csproj", "{DAA1E059-10DC-466F-8917-5B6E7F64FEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teste-Desenvolvedor-.NET.Shared", "Teste-Desenvolvedor-.NET.Shared\Teste-Desenvolvedor-.NET.Shared.csproj", "{DAA1E059-10DC-466F-8917-5B6E7F64FEC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

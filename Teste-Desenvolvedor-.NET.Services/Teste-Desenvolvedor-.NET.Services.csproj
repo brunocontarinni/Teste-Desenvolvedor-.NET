@@ -21,6 +21,7 @@
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Data\Teste-Desenvolvedor-.NET.Data.csproj" />
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Domain\Teste-Desenvolvedor-.NET.Domain.csproj" />
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj" />
+    <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Shared\Teste-Desenvolvedor-.NET.Shared.csproj" />
   </ItemGroup>
 
 </Project>

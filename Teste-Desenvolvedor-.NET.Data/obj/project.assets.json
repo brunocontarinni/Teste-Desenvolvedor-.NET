@@ -913,7 +913,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "Teste-Desenvolvedor-.NET.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Teste-Desenvolvedor-.NET.Models.dll": {}
