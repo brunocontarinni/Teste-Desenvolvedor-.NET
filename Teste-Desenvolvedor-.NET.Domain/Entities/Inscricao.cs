@@ -6,7 +6,15 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
 {
     public class Inscricao : Entity
     {
-        public Inscricao(string nome, int status, Guid idOferta, Oferta oferta, Guid idLead, Lead lead, Guid idProcessoSeletivo, ProcessoSeletivo processoSeletivo)
+        //Construtor da Classe
+        public Inscricao(string nome, 
+            int status, 
+            Guid idOferta, 
+            Oferta oferta, 
+            Guid idLead, 
+            Lead lead, 
+            Guid idProcessoSeletivo, 
+            ProcessoSeletivo processoSeletivo)
         {
             Nome = nome;
             Data = DateTime.Now;
@@ -19,21 +27,33 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             ProcessoSeletivo = processoSeletivo;
         }
 
+        //Construtir para a migração
         private Inscricao() { }
-
+        
+        //Nome da Inscrição
         public string Nome { get; private set; }
+        //Data da Inscrição
         public DateTime Data { get; private set; }
+        //Status da Inscrição
         public int Status { get; private set; }
+        //Id da Oferta
         public Guid IdOferta { get; private set; }
+        //Oferta, podendo ser nula
         public Oferta? Oferta { get;  set; }
+        // Id do Lead
         public Guid IdLead { get; private set; }
+        // Lead, podendo ser nulo
         public Lead? Lead { get;  set; }
+        // Id do Processo Seletivo
         public Guid IdProcessoSeletivo { get; private set; }
+        // Processo Seletivo, podendo ser nulo
         public ProcessoSeletivo? ProcessoSeletivo { get;  set; }
 
+        // Lista de Notificações, verifica armazena erros da Entidade
         [NotMapped]
         public List<string> Notificacao { get; private set; } = new List<string>();
 
+        // Atualiza as prorpiedades do Objeto
         public void Atualizar(string nome,int status, Guid idOferta, Guid idLead, Guid idProcessoSeletivo )
         {
             Nome = nome;
@@ -45,6 +65,7 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             IsValid();
         }
 
+        // Verifica se a Entidade é valida, se nao for adiciona a respectiva notificação
         public void IsValid()
         {
            if(Nome.Length<3)
@@ -81,6 +102,7 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             }
         }
 
+        // Função para adicionar notificações customizadas
         public void AddNotification(string key, string message)
         {
             Notificacao.Add(key + " - " + message);

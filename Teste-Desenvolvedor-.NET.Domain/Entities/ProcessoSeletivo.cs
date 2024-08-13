@@ -5,9 +5,11 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
 {
     public class ProcessoSeletivo : Entity
     {
+        //Construtor da Classe
         public ProcessoSeletivo(string nome, DateTime dataInicio, DateTime dataTermino)
         {
             Nome = nome;
+            //Conversão de Datetime para DateOnly
             DataInicio = DateOnly.FromDateTime( dataInicio);
             DataTermino = DateOnly.FromDateTime( dataTermino);
 
@@ -20,9 +22,11 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
         public DateOnly DataInicio { get; private set; }
         public DateOnly DataTermino { get; private set; }
 
+        // Lista de Notificações para armazenar erros na Entidade
         [NotMapped]
         public List<string> Notificacao { get; private set; } = new List<string>();
 
+        //Função que atualiza as propriedades da Classe
         public void Atualizar(string nome, DateOnly dataInicio, DateOnly dataTermino)
         {
             Nome = nome;
@@ -31,7 +35,7 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             Updated();
             IsValid();
         }
-
+        // Verifica se a Entidade é valida, caso nao adiciona arespectiva notificação a lista
         public void IsValid()
         {
             if(Nome.Length < 3)
@@ -40,7 +44,7 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
                 Notificacao.Add("Data de início deve ser menor que a data de término");
             
         }
-
+        // Função para criar notificações customizadas
         public void AddNotification(string key, string message)
         {
             Notificacao.Add(key + " - " + message);
