@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Buscar Inscrições por Oferta";
+}
+
+<h2>Buscar Inscrições por Oferta</h2>
+
+<form method="get" asp-action="BuscarPorOferta">
+    <div class="form-group">
+        <label for="ofertaId">ID da Oferta</label>
+        <input type="text" class="form-control" id="ofertaId" name="ofertaId" placeholder="Digite o ID da Oferta">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>

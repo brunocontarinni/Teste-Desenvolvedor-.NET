@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = testeCRMEDU
+build_property.RootNamespace = testeCRMEDU
+build_property.ProjectDir = D:\Projetos\Pessoal\TesteCRMEDU\Teste-Desenvolvedor-.NET\testeCRMEDU\testeCRMEDU\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projetos\Pessoal\TesteCRMEDU\Teste-Desenvolvedor-.NET\testeCRMEDU\testeCRMEDU
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Inscricao/BuscarPorCPF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEJ1c2NhclBvckNQRi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Inscricao/BuscarPorOferta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEJ1c2NhclBvck9mZXJ0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Inscricao/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Inscricao/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Inscricao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpY2FvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Lead/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Lead/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Lead/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Oferta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Oferta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Oferta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/ProcessoSeletivo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29TZWxldGl2b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/ProcessoSeletivo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29TZWxldGl2b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/ProcessoSeletivo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvY2Vzc29TZWxldGl2b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projetos/Pessoal/TesteCRMEDU/Teste-Desenvolvedor-.NET/testeCRMEDU/testeCRMEDU/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vifn6rsz6v

@@ -1,0 +1,44 @@
+﻿@model List<Inscricao>
+@{
+}
+
+<h2 class="text-center mb-5">Lista de Inscrições</h2>
+
+<div class="row mb-5">
+    <div class="col">
+        <a class="btn btn-primary" asp-controller="Inscricao" asp-action="Create">Nova Inscrição</a>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Número da Inscrição</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Lead Id</th>
+            <th>Processo Seletivo Id</th>
+            <th>Oferta Id</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td>@item.NumeroInscricao </td>
+                <td>@item.Data</td>
+                <td>@item.Status</td>
+                <td>@item.LeadId</td>
+                <td>@item.ProcessoSeletivoId</td>
+                <td>@item.OfertaId</td>
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-controller="Inscricao" asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a class="btn btn-danger btn-sm" asp-controller="Inscricao" asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

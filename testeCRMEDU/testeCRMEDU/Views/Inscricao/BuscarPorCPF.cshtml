@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Buscar Inscrições por CPF";
+}
+
+<h2>Buscar Inscrições por CPF</h2>
+
+<form method="get" asp-action="BuscarPorCPF">
+    <div class="form-group">
+        <label for="cpf">CPF</label>
+        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o CPF">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
