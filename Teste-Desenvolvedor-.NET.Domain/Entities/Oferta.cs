@@ -38,8 +38,8 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
                 Notificacao.Add("Nome da oferta deve ter no mínimo 3 caracteres");
             if(Descricao.Length < 3)
                 Notificacao.Add("Descrição da oferta deve ter no mínimo 3 caracteres");
-            if(VagasDisponiveis < 1)
-                Notificacao.Add("Vagas disponíveis deve ser maior que 0");
+            if(VagasDisponiveis <= 0)
+                Notificacao.Add("Vagas disponíveis devem ser maiors ou iguais a 0");
         }
         public void AddNotification(string key, string message)
         {

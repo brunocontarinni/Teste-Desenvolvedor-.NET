@@ -73,7 +73,7 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
 
         public async Task<IEnumerable<ProcessoSeletivo>> GetAllProcessoSeletivo()
         {
-            return await _dbContext.ProcessosSeletivos.ToListAsync();
+            return await _dbContext.ProcessosSeletivos.Where(x => x.Deleted == false).ToListAsync();
         }
 
         public async Task<ProcessoSeletivo> GetProcessoSeletivo(Guid id)

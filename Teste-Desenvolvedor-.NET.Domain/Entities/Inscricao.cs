@@ -25,11 +25,11 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
         public DateTime Data { get; private set; }
         public int Status { get; private set; }
         public Guid IdOferta { get; private set; }
-        public Oferta Oferta { get; private set; }
+        public Oferta? Oferta { get;  set; }
         public Guid IdLead { get; private set; }
-        public Lead Lead { get; private set; }
+        public Lead? Lead { get;  set; }
         public Guid IdProcessoSeletivo { get; private set; }
-        public ProcessoSeletivo ProcessoSeletivo { get; private set; }
+        public ProcessoSeletivo? ProcessoSeletivo { get;  set; }
 
         [NotMapped]
         public List<string> Notificacao { get; private set; } = new List<string>();
@@ -45,7 +45,7 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             IsValid();
         }
 
-        private void IsValid()
+        public void IsValid()
         {
            if(Nome.Length<3)
             {
@@ -66,6 +66,18 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
             if(IdProcessoSeletivo == Guid.Empty)
             {
                 Notificacao.Add("Id do processo seletivo não pode ser vazio");
+            }
+            if(Lead == null)
+            {
+                Notificacao.Add("Lead não encontrado");
+            }
+            if(Oferta == null)
+            {
+                Notificacao.Add("Oferta não encontrada");
+            }
+            if(ProcessoSeletivo == null)
+            {
+                Notificacao.Add("Processo seletivo não encontrado");
             }
         }
 

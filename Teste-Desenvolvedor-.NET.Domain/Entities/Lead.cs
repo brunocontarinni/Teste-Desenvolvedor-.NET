@@ -42,10 +42,10 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
                 Notificacao.Add("Nome do lead deve ter no mínimo 3 caracteres");
             if(Email.Length < 3)
                 Notificacao.Add("Email do lead deve ter no mínimo 3 caracteres");
-            if(Telefone.Length < 3)
-                Notificacao.Add("Telefone do lead deve ter no mínimo 3 caracteres");
-            if(CPF.Length < 3)
-                Notificacao.Add("CPF do lead deve ter no mínimo 3 caracteres");
+            if(Telefone.Length < 9)
+                Notificacao.Add("Telefone do lead deve ter no mínimo 9 caracteres");
+            if(CPF.Length < 11)
+                Notificacao.Add("CPF do lead deve ter no mínimo 11 caracteres");
             
         }
         public void AddNotificacao(string key, string message)

@@ -75,7 +75,7 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
 
         public async Task<IEnumerable<Oferta>> GetAllOferta()
         {
-            return await _dbContext.Ofertas.ToListAsync();
+            return await _dbContext.Ofertas.Where(x => x.Deleted == false).ToListAsync();
         }
 
         public async Task<Oferta> GetOferta(Guid id)

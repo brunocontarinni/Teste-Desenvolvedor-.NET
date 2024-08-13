@@ -5,7 +5,7 @@ using Teste_Desenvolvedor_.NET.Services.Interfaces;
 namespace Teste_Desenvolvedor_.NET.API.Controllers
 {
     [ApiController]
-    [Route("api/v1/inscicao")]
+    [Route("api/v1/inscricao")]
     public class InscricaoController : Controller
     {
 

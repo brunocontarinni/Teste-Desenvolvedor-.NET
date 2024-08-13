@@ -5,11 +5,11 @@ namespace Teste_Desenvolvedor_.NET.Domain.Entities
 {
     public class ProcessoSeletivo : Entity
     {
-        public ProcessoSeletivo(string nome, DateOnly dataInicio, DateOnly dataTermino)
+        public ProcessoSeletivo(string nome, DateTime dataInicio, DateTime dataTermino)
         {
             Nome = nome;
-            DataInicio = dataInicio;
-            DataTermino = dataTermino;
+            DataInicio = DateOnly.FromDateTime( dataInicio);
+            DataTermino = DateOnly.FromDateTime( dataTermino);
 
             IsValid();
         }

@@ -3,7 +3,7 @@
     public class ProcessoSeletivoModel
     {
         public string? Nome { get; set; }
-        public DateOnly? DataInicio { get; set; }
-        public DateOnly? DataTermino { get; set; }
+        public DateTime? DataInicio { get; set; }
+        public DateTime? DataTermino { get; set; }
     }
 }

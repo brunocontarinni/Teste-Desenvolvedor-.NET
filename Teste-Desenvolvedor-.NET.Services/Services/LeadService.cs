@@ -84,7 +84,7 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
 
         public async Task<IEnumerable<Lead>> GetAllLead()
         {
-            return await _dbContext.Leads.ToListAsync();
+            return await _dbContext.Leads.Where(x => x.Deleted == false).ToListAsync();
         }
 
         public Task<Lead> GetLead(Guid id)

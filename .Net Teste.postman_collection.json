@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "78197e86-9d1e-440e-9024-8a0e48a1fd66",
+		"name": ".Net Teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29693665"
+	},
+	"item": [
+		{
+			"name": "Inscrição",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicioar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"isnncricao 4\",\r\n  \"data\": \"2024-08-13T13:13:55.269Z\",\r\n  \"status\": 0,\r\n  \"idOferta\": \"041c799e-d054-4da2-9e21-51335e2e317e\",\r\n  \"idLead\": \"48c9c9d8-b2ae-439a-bbeb-8b16e597d2d7\",\r\n  \"idProcessoSeletivo\": \"80a2f427-7720-49f3-b2e7-6bb613c4dd23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get por CPF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get por Oferta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/inscricao/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"inscricao",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lead",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/lead/bf5af453-c0ac-4664-b969-7e4a4c7a681e",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"lead",
+								"bf5af453-c0ac-4664-b969-7e4a4c7a681e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/lead/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"lead",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicioar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"nome\": \"Guilherme\",\r\n  \"email\": \"guir@gmail.com\",\r\n  \"telefone\": \"119999999\",\r\n  \"cpf\": \"33333333333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/lead",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"lead"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"nome\": \"Joao\",\r\n  \"email\": \"guir@gmail.com\",\r\n  \"telefone\": \"119999999\",\r\n  \"cpf\": \"33333333333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/lead/bf5af453-c0ac-4664-b969-7e4a4c7a681e",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"lead",
+								"bf5af453-c0ac-4664-b969-7e4a4c7a681e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/lead/d0e4a2ba-bf6a-45a2-8d40-464ea8567897",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"lead",
+								"d0e4a2ba-bf6a-45a2-8d40-464ea8567897"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oferta",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/oferta/01b93539-7ade-4f71-bc5e-94edd73e2694",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"oferta",
+								"01b93539-7ade-4f71-bc5e-94edd73e2694"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/oferta/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"oferta",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicioar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"bb\",\r\n  \"descricao\": \"is\",\r\n  \"vagasDisponiveis\": -1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/oferta/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"oferta",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"cccbbb\",\r\n  \"descricao\": \"esse foi atuaizado\",\r\n  \"vagasDisponiveis\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/oferta/041c799e-d054-4da2-9e21-51335e2e317e",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"oferta",
+								"041c799e-d054-4da2-9e21-51335e2e317e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/oferta/2846c9e3-498b-4112-809c-25f951ad95f1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"oferta",
+								"2846c9e3-498b-4112-809c-25f951ad95f1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Processo Seletivo",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/processo-seletivo/bddab866-5ce1-418e-9cd9-9c92f650bd9f",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"processo-seletivo",
+								"bddab866-5ce1-418e-9cd9-9c92f650bd9f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/processo-seletivo/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"processo-seletivo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Adicioar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"BBBBCCCCCBBB\",\r\n  \"dataInicio\": \"2023-03-13T12:54:43.831Z\",\r\n  \"dataTermino\": \"2024-03-14T12:54:43.831Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/processo-seletivo/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"processo-seletivo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"BBBBCCCCCBBB\",\r\n  \"dataInicio\": \"2024-03-13T12:54:43.831Z\",\r\n  \"dataTermino\": \"2024-03-15T12:54:43.831Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7250/api/v1/processo-seletivo/bddab866-5ce1-418e-9cd9-9c92f650bd9f",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"processo-seletivo",
+								"bddab866-5ce1-418e-9cd9-9c92f650bd9f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/processo-seletivo/66388870-d12c-432a-9393-02e8b5a64c77",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"processo-seletivo",
+								"66388870-d12c-432a-9393-02e8b5a64c77"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
