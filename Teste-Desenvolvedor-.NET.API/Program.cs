@@ -33,6 +33,7 @@ builder.Services.AddScoped<ILeadService, LeadService>();
 builder.Services.AddScoped<IOfertaService, OfertaServices>();
 builder.Services.AddScoped<IProcessoSeletivoService, ProcessoSeletivoService>();
 builder.Services.AddScoped<IInscricaoService, InscricaoService>();
+builder.Services.AddScoped<IUtilsService, UtilsService>();
 
 var app = builder.Build();
 
