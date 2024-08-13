@@ -2860,7 +2860,8 @@
       "Teste-Desenvolvedor-.NET.Data >= 1.0.0",
       "Teste-Desenvolvedor-.NET.Domain >= 1.0.0",
       "Teste-Desenvolvedor-.NET.Models >= 1.0.0",
-      "Teste-Desenvolvedor-.NET.Services >= 1.0.0"
+      "Teste-Desenvolvedor-.NET.Services >= 1.0.0",
+      "Teste-Desenvolvedor-.NET.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2907,6 +2908,9 @@
             },
             "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Services\\Teste-Desenvolvedor-.NET.Services.csproj": {
               "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Services\\Teste-Desenvolvedor-.NET.Services.csproj"
+            },
+            "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Shared\\Teste-Desenvolvedor-.NET.Shared.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\GitHub\\Teste-Desenvolvedor-.NET\\Teste-Desenvolvedor-.NET.Shared\\Teste-Desenvolvedor-.NET.Shared.csproj"
             }
           }
         }

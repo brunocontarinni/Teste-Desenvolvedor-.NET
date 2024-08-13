@@ -19,7 +19,7 @@
             </summary>
             <returns>IActionResult</returns>
             <response code="200">Se a Inscrição foi encontrada </response>
-            <response code="400">Se a Inscrição não foi encontrada</response>
+            <response code="404">Se a Inscrição não foi encontrada</response>
         </member>
         <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.GetAllInscicao">
             <summary>
@@ -34,15 +34,36 @@
             </summary>
             <returns>IActionResult</returns>
             <response code="204">Se a Inscrição foi Deletada </response>
-            <response code="400">Se a Inscrição não foi encontrada</response>
+            <response code="404">Se a Inscrição não foi encontrada</response>
         </member>
         <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.PutInscicao(Teste_Desenvolvedor_.NET.Models.Models.InscricaoModel,System.Guid)">
             <summary>
             Atualizar uma Inscrição
             </summary>
+            <param name="model">Objeto para a Atualizacao de uma Inscrição</param>
+            <param name="id">Objeto para a encontrar a Inscição</param>
             <returns>IActionResult</returns>
             <response code="204">Se a Inscrição foi Aualizada </response>
             <response code="400">Se a Inscrição não foi encontrada</response>
+            <response code="404">Se o Lead não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.GetInscicoesCpf(System.String)">
+            <summary>
+            Retornar uma lista de Inscrições por CPF
+            </summary>
+            <returns>IActionResult</returns>
+            <param name="cpf">Objeto para a encontrar o Lead</param>
+            <response code="200">Se a Inscrição foi encontrada </response>
+            <response code="404">Se o CPF não foi encontrado</response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.InscricaoController.GetInscicoesOferta(System.Guid)">
+            <summary>
+            Retornar uma lista de Inscrições por Oferta
+            </summary>
+            <param name="id">Objeto para a encontrar a Oferta</param>
+            <returns>IActionResult</returns>
+            <response code="200">Se a Inscrição foi encontrada </response>
+            <response code="404">Se a Oferta não foi encontrado</response>
         </member>
         <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.LeadController.AdicionarLead(Teste_Desenvolvedor_.NET.Models.Models.LeadModel)">
             <summary>
@@ -98,7 +119,7 @@
             <response code="200">Se a Oferta foi Criada </response>
             <response code="400">Se a Oferta não foi Criada</response>
         </member>
-        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.GetOfertao(System.Guid)">
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.OfertaController.GetOferta(System.Guid)">
             <summary>
             Rertornar uma Oferta
             </summary>

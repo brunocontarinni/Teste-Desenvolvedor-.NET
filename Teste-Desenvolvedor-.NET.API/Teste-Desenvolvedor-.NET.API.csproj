@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Teste_Desenvolvedor_.NET.API</RootNamespace>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +26,7 @@
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Domain\Teste-Desenvolvedor-.NET.Domain.csproj" />
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Models\Teste-Desenvolvedor-.NET.Models.csproj" />
     <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Services\Teste-Desenvolvedor-.NET.Services.csproj" />
+    <ProjectReference Include="..\Teste-Desenvolvedor-.NET.Shared\Teste-Desenvolvedor-.NET.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -94,7 +94,7 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
 
         public async Task<IEnumerable<Inscricao>> GetInscicoesOferta(Guid id)
         {
-            var inscricoes =await  _dbContext.Inscricoes.Where(x => x.Deleted == false)
+            return await  _dbContext.Inscricoes.Where(x => x.Deleted == false)
                 .Where(x => x.IdOferta == id).ToListAsync();
         }
 
