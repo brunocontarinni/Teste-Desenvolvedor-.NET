@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\workplace\\VestibularApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\controllers\\cursoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\vestibularapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\vestibularapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\controllers\\inscricoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\controllers\\inscricoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\controllers\\processosseletivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\controllers\\processosseletivoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\controllers\\candidatoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\controllers\\candidatoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\models\\processoseletivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\models\\processoseletivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\models\\candidato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\models\\candidato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\models\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\models\\inscricao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|e:\\workplace\\vestibularapi\\vestibularapi\\data\\vestibularcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A209562-DD84-4680-AA77-F1D75CA08101}|VestibularApi\\VestibularApi.csproj|solutionrelative:vestibularapi\\data\\vestibularcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CursosController.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\CursosController.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Controllers\\CursosController.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\CursosController.cs",
+              "RelativeToolTip": "VestibularApi\\Controllers\\CursosController.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAUwMAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T03:30:32.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InscricoesController.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\InscricoesController.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Controllers\\InscricoesController.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\InscricoesController.cs",
+              "RelativeToolTip": "VestibularApi\\Controllers\\InscricoesController.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAADwv8IAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T17:15:48.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CandidatosController.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\CandidatosController.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Controllers\\CandidatosController.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\CandidatosController.cs",
+              "RelativeToolTip": "VestibularApi\\Controllers\\CandidatosController.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAADwv6MAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:49:16.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\appsettings.json",
+              "RelativeDocumentMoniker": "VestibularApi\\appsettings.json",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\appsettings.json",
+              "RelativeToolTip": "VestibularApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-10T12:45:42.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Curso.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Models\\Curso.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Curso.cs",
+              "RelativeToolTip": "VestibularApi\\Models\\Curso.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:33:41.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProcessoSeletivo.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\ProcessoSeletivo.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Models\\ProcessoSeletivo.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\ProcessoSeletivo.cs",
+              "RelativeToolTip": "VestibularApi\\Models\\ProcessoSeletivo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:31:21.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Inscricao.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Inscricao.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Models\\Inscricao.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Inscricao.cs",
+              "RelativeToolTip": "VestibularApi\\Models\\Inscricao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:27:02.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Candidato.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Candidato.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Models\\Candidato.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Models\\Candidato.cs",
+              "RelativeToolTip": "VestibularApi\\Models\\Candidato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:25:26.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProcessosSeletivosController.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\ProcessosSeletivosController.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Controllers\\ProcessosSeletivosController.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Controllers\\ProcessosSeletivosController.cs",
+              "RelativeToolTip": "VestibularApi\\Controllers\\ProcessosSeletivosController.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAADwv6UAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T03:28:58.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VestibularApi",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\VestibularApi.csproj",
+              "RelativeDocumentMoniker": "VestibularApi\\VestibularApi.csproj",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\VestibularApi.csproj",
+              "RelativeToolTip": "VestibularApi\\VestibularApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T14:26:28.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Program.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Program.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Program.cs",
+              "RelativeToolTip": "VestibularApi\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:47:39.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VestibularContext.cs",
+              "DocumentMoniker": "E:\\workplace\\VestibularApi\\VestibularApi\\Data\\VestibularContext.cs",
+              "RelativeDocumentMoniker": "VestibularApi\\Data\\VestibularContext.cs",
+              "ToolTip": "E:\\workplace\\VestibularApi\\VestibularApi\\Data\\VestibularContext.cs",
+              "RelativeToolTip": "VestibularApi\\Data\\VestibularContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T12:42:09.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
