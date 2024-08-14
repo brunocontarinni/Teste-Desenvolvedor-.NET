@@ -20,7 +20,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         /// </summary>
         /// <returns>IActionResult</returns>
         /// <response code="200">Se as Inscrições foram retornadas </response>
-        [HttpGet("isncricao")]
+        [HttpGet("inscricao")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetAllDeletedInscicao()
         {

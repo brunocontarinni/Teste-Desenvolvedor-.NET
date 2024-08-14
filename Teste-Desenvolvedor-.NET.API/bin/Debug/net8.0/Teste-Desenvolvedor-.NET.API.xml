@@ -200,5 +200,42 @@
             <response code="404">Se o Processo Seletivo não foi encontrado</response>
             <response code="400">Se o Processo Seletivo não foi Atualizado</response>
         </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.UtilsController.GetAllDeletedInscicao">
+            <summary>
+            Retornar Todas as Inscrições Deletadas
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se as Inscrições foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.UtilsController.GetAllDeletedLead">
+            <summary>
+            Retornar Todos os Lead Deletados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se os leads foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.UtilsController.GetAllDeletedOferta">
+            <summary>
+            Retornar Todas as Ofertas Deletadas
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se as Ofertas foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.UtilsController.GetAllDeletedProcesso">
+            <summary>
+            Retornar Todos os Processos Seletivos Deletados
+            </summary>
+            <returns>IActionResult</returns>
+            <response code="200">Se os Processos Seletivos foram retornadas </response>
+        </member>
+        <member name="M:Teste_Desenvolvedor_.NET.API.Controllers.UtilsController.DeleteProcessoSeletivo(System.Guid)">
+            <summary>
+            Deleta uma entidade definitivamente
+            </summary>
+            <param name="id">Objeto para a encontrar a entidade</param>
+            <returns>IActionResult</returns>
+            <response code="204">Se a entidade foi Deletada </response>
+            <response code="404">Se a entidade Seletivo não foi encontrado</response>
+        </member>
     </members>
 </doc>
