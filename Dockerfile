@@ -23,6 +23,8 @@ COPY --from=build-env /app/out .
 
 # Expose the port the application runs on
 EXPOSE 80
+EXPOSE 443
+EXPOSE 8080
 
 # Set the entry point for the application
 ENTRYPOINT ["dotnet", "Teste-Desenvolvedor-.NET.API.dll"]

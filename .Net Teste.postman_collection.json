@@ -580,6 +580,79 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Utils",
+			"item": [
+				{
+					"name": "Inscriçoes Deletadas",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Leads Deletados",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Ofertas Deletadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/utils/oferta",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"utils",
+								"oferta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Processos Seletivos Deletados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7250/api/v1/utils/processo-seletivo",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7250",
+							"path": [
+								"api",
+								"v1",
+								"utils",
+								"processo-seletivo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Permanentemente",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
