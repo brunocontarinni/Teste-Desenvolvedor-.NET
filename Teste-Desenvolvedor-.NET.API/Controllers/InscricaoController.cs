@@ -126,7 +126,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         /// <param name="cpf">Objeto para a encontrar o Lead</param>
         /// <response code="200">Se a Inscrição foi encontrada </response>
         /// <response code="404">Se o CPF não foi encontrado</response>
-        [HttpGet("/cpf/{cpf}")]
+        [HttpGet("cpf/{cpf}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetInscicoesCpf(string cpf)
@@ -147,7 +147,7 @@ namespace Teste_Desenvolvedor_.NET.API.Controllers
         /// <returns>IActionResult</returns>
         /// <response code="200">Se a Inscrição foi encontrada </response>
         /// <response code="404">Se a Oferta não foi encontrado</response>
-        [HttpGet("/oferta/{id}")]
+        [HttpGet("oferta/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetInscicoesOferta(Guid id)

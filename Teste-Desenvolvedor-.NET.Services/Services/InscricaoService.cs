@@ -57,7 +57,11 @@ namespace Teste_Desenvolvedor_.NET.Services.Services
             var inscricao = _mapper.Map<Inscricao>(model);
 
             // Verifica se a Inscrição existe no banco 
-            var existe = await _dbContext.Inscricoes.Where(x => x.Deleted == false)
+            var existe = await _dbContext.Inscricoes
+                .Include(x => x.Oferta)
+                .Include(x => x.Lead)
+                .Include(x => x.ProcessoSeletivo)
+                .Where(x => x.Deleted == false)
                 .FirstOrDefaultAsync(y => y.Id == id);
             // Retorna nulo caso nao encontrar
             if (existe == null)
