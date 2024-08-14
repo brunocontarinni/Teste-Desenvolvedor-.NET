@@ -1,5 +1,19 @@
 # Teste Desenvolvedor .NET
 
+Link para o Video : https://youtu.be/DlkGganHzRs  
+Link para Conteiner : https://hub.docker.com/repository/docker/mrpicoli/backendtest-api/general  
+
+Tecnologias utilizadas:  
+.NET 8 : https://dotnet.microsoft.com/pt-br/download/dotnet/8.0  
+MySQL 8.0.39 : https://dev.mysql.com/downloads/installer/  
+
+## Como Rodar
+
+Ter instalado o .NET versão 8 que pode ser encontrado no link acima e o MySQL na versão 8.0.39 que pode ser encontrada acima. PAra iniciar sera nescessario trocar a connection string para uma de sua escolha e realizar a migração.  
+
+Como realizar a migração : https://learn.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli  
+
+
 ![Aiko](imagens/logocrm.png)
 
 Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .NET.
