@@ -1,0 +1,153 @@
+@VestibularAPI_HostAddress = http://localhost:5007
+
+### Processo Seletivo
+
+# Criar um Processo Seletivo
+POST {{VestibularAPI_HostAddress}}/api/processoseletivo
+Content-Type: application/json
+
+{
+  "nome": "Processo Seletivo 2024",
+  "dataInicio": "2024-01-01T00:00:00",
+  "dataTermino": "2024-12-31T23:59:59"
+}
+
+###
+# Obter todos os Processos Seletivos
+GET {{VestibularAPI_HostAddress}}/api/processoseletivo
+Accept: application/json
+
+###
+# Obter um Processo Seletivo por ID
+GET {{VestibularAPI_HostAddress}}/api/processoseletivo/1
+Accept: application/json
+
+###
+# Atualizar um Processo Seletivo
+PUT {{VestibularAPI_HostAddress}}/api/processoseletivo/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Processo Seletivo 2024 - Atualizado",
+  "dataInicio": "2024-01-01T00:00:00",
+  "dataTermino": "2024-12-31T23:59:59"
+}
+
+###
+# Excluir um Processo Seletivo
+DELETE {{VestibularAPI_HostAddress}}/api/processoseletivo/1
+
+### Lead
+
+# Criar um Lead
+POST {{VestibularAPI_HostAddress}}/api/lead
+Content-Type: application/json
+
+{
+  "nome": "Lucas de Souza",
+  "email": "lucas@example.com",
+  "telefone": "11999999999"
+}
+
+###
+# Obter todos os Leads
+GET {{VestibularAPI_HostAddress}}/api/lead
+Accept: application/json
+
+###
+# Obter um Lead por ID
+GET {{VestibularAPI_HostAddress}}/api/lead/1
+Accept: application/json
+
+###
+# Atualizar um Lead
+PUT {{VestibularAPI_HostAddress}}/api/lead/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Lucas de Souza Atualizado",
+  "email": "lucas.novo@example.com",
+  "telefone": "11988888888"
+}
+
+###
+# Excluir um Lead
+DELETE {{VestibularAPI_HostAddress}}/api/lead/1
+
+### Oferta
+
+# Criar uma Oferta
+POST {{VestibularAPI_HostAddress}}/api/oferta
+Content-Type: application/json
+
+{
+  "curso": "Engenharia de Software",
+  "vagas": 50
+}
+
+###
+# Obter todas as Ofertas
+GET {{VestibularAPI_HostAddress}}/api/oferta
+Accept: application/json
+
+###
+# Obter uma Oferta por ID
+GET {{VestibularAPI_HostAddress}}/api/oferta/1
+Accept: application/json
+
+###
+# Atualizar uma Oferta
+PUT {{VestibularAPI_HostAddress}}/api/oferta/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "curso": "Engenharia de Software Atualizado",
+  "vagas": 60
+}
+
+###
+# Excluir uma Oferta
+DELETE {{VestibularAPI_HostAddress}}/api/oferta/1
+
+### Inscrição
+
+# Criar uma Inscrição
+POST {{VestibularAPI_HostAddress}}/api/inscricao
+Content-Type: application/json
+
+{
+  "processoSeletivoID": 1,
+  "leadID": 1,
+  "ofertaID": 1,
+  "dataInscricao": "2024-08-14T00:00:00"
+}
+
+###
+# Obter todas as Inscrições
+GET {{VestibularAPI_HostAddress}}/api/inscricao
+Accept: application/json
+
+###
+# Obter uma Inscrição por ID
+GET {{VestibularAPI_HostAddress}}/api/inscricao/1
+Accept: application/json
+
+###
+# Atualizar uma Inscrição
+PUT {{VestibularAPI_HostAddress}}/api/inscricao/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "processoSeletivoID": 1,
+  "leadID": 1,
+  "ofertaID": 1,
+  "dataInscricao": "2024-08-15T00:00:00"
+}
+
+###
+# Excluir uma Inscrição
+DELETE {{VestibularAPI_HostAddress}}/api/inscricao/1
