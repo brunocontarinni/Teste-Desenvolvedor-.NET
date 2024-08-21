@@ -17,7 +17,7 @@ namespace VestibularApi.API.Controllers
             _candidatoService = candidatoService;
         }
 
-        [HttpGet("{id}")]
+        [[HttpGet("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
             var candidato = await _candidatoService.PegarPorIdAsync(id);
@@ -26,10 +26,9 @@ namespace VestibularApi.API.Controllers
 
             var response = new CandidatoResponse
             {
-                Id = candidato.Id,
+                Id = candidato.Id, // UUID aqui
                 Nome = candidato.Nome,
-                CPF = candidato.CPF,
-                DataCriacao = DateTime.UtcNow
+                CPF = candidato.CPF
             };
             return Ok(response);
         }
