@@ -17,7 +17,7 @@ namespace VestibularApi.API.Controllers
             _candidatoService = candidatoService;
         }
 
-        [[HttpGet("{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> Get(Guid id)
         {
             var candidato = await _candidatoService.PegarPorIdAsync(id);
