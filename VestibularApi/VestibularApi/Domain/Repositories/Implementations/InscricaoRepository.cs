@@ -24,21 +24,6 @@ namespace VestibularApi.Domain.Repositories.Implementations
             return await _context.Inscricoes.ToListAsync();
         }
 
-        public async Task<IEnumerable<InscricaoEntities>> PegarPorCpfAsync(string cpf)
-        {
-            return await _context.Inscricoes
-                .Include(i => i.Candidato)
-                .Where(i => i.Candidato.CPF == cpf)
-                .ToListAsync();
-        }
-
-        public async Task<IEnumerable<InscricaoEntities>> PegarPorOfertaAsync(Guid ofertaId)
-        {
-            return await _context.Inscricoes
-                .Where(i => i.OfertaId == ofertaId)
-                .ToListAsync();
-        }
-
         public async Task AdicionarAsync(InscricaoEntities inscricao)
         {
             _context.Inscricoes.Add(inscricao);
@@ -59,6 +44,24 @@ namespace VestibularApi.Domain.Repositories.Implementations
                 _context.Inscricoes.Remove(inscricao);
                 await _context.SaveChangesAsync();
             }
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorCpfAsync(string cpf)
+        {
+            return await _context.Inscricoes
+                .Include(i => i.Candidato)
+                .Include(i => i.Oferta)
+                .Where(i => i.Candidato.CPF == cpf)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorOfertaAsync(Guid ofertaId)
+        {
+            return await _context.Inscricoes
+                .Include(i => i.Candidato)
+                .Include(i => i.Oferta)
+                .Where(i => i.OfertaId == ofertaId)
+                .ToListAsync();
         }
     }
 }

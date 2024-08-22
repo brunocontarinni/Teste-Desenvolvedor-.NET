@@ -3,7 +3,6 @@ using VestibularApi.API.Requests;
 using VestibularApi.API.Responses;
 using VestibularApi.Domain.Repositories.Interfaces;
 using VestibularApi.Application.Services.Interfaces;
-using VestibularApi.Application.Services.Inscricao;
 
 namespace VestibularApi.Application.Services.Implementations
 {
@@ -102,14 +101,16 @@ namespace VestibularApi.Application.Services.Implementations
             await _inscricaoRepository.DeletarAsync(id);
         }
 
-        public async Task<IEnumerable<InscricaoEntities>> PegarPorCPFAsync(string cpf)
+        public async Task<IEnumerable<InscricaoResponse>> PegarPorCpfAsync(string cpf)
         {
-            return await _inscricaoRepository.PegarPorCpfAsync(cpf);
+            var inscricoes = await _inscricaoRepository.PegarPorCpfAsync(cpf);
+            return inscricoes.Select(i => InscricaoResponse.ConverterEntity(i));
         }
 
-        public async Task<IEnumerable<InscricaoEntities>> PegarPorOfertaAsync(Guid ofertaId)
+        public async Task<IEnumerable<InscricaoResponse>> PegarPorOfertaAsync(Guid ofertaId)
         {
-            return await _inscricaoRepository.PegarPorOfertaAsync(ofertaId);
+            var inscricoes = await _inscricaoRepository.PegarPorOfertaAsync(ofertaId);
+            return inscricoes.Select(i => InscricaoResponse.ConverterEntity(i));
         }
     }
 }

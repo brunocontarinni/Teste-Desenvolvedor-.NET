@@ -5,7 +5,6 @@ using VestibularApi.Application.Services.Interfaces;
 using VestibularApi.Application.Services.Implementations;
 using VestibularApi.Domain.Repositories.Implementations;
 using VestibularApi.Domain.Repositories.Interfaces;
-using VestibularApi.Application.Services.Inscricao;
 using VestibularApi.Domain.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +14,12 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "VestibularApi", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo 
+    { 
+        Title = "VestibularApi", 
+        Version = "v1",
+        Description = "API para gerenciamento de inscrições em vestibulares."
+    });
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

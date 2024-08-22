@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using VestibularApi.API.Requests;
 using VestibularApi.API.Responses;
-using VestibularApi.Application.Services.Inscricao;
+using VestibularApi.Application.Services.Interfaces;
 
 namespace VestibularApi.API.Controllers
 {
@@ -26,14 +26,15 @@ namespace VestibularApi.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<InscricaoResponse>> GetById(Guid id)
         {
-            var inscricao = await _inscricaoService.ObterPorIdAsync(id);
-
-            if (inscricao == null)
+            try
             {
-                return NotFound("Inscription not found.");
+                var inscricao = await _inscricaoService.ObterPorIdAsync(id);
+                return Ok(inscricao);
             }
-
-            return Ok(inscricao);
+            catch (KeyNotFoundException)
+            {
+                return NotFound("Inscrição não encontrada.");
+            }
         }
 
         [HttpPost]
@@ -41,7 +42,7 @@ namespace VestibularApi.API.Controllers
         {
             if (inscricaoRequest == null)
             {
-                return BadRequest("Invalid data.");
+                return BadRequest("Dados inválidos.");
             }
 
             var inscricao = await _inscricaoService.CriarAsync(inscricaoRequest);
@@ -53,19 +54,18 @@ namespace VestibularApi.API.Controllers
         {
             if (inscricaoRequest == null)
             {
-                return BadRequest("Invalid data.");
+                return BadRequest("Dados inválidos.");
             }
 
             try
             {
                 await _inscricaoService.AtualizarAsync(id, inscricaoRequest);
+                return NoContent();
             }
             catch (KeyNotFoundException)
             {
-                return NotFound("Inscription not found.");
+                return NotFound("Inscrição não encontrada.");
             }
-
-            return NoContent();
         }
 
         [HttpDelete("{id}")]
@@ -74,13 +74,34 @@ namespace VestibularApi.API.Controllers
             try
             {
                 await _inscricaoService.DeletarAsync(id);
+                return NoContent();
             }
             catch (KeyNotFoundException)
             {
-                return NotFound("Inscription not found.");
+                return NotFound("Inscrição não encontrada.");
             }
+        }
 
-            return NoContent();
+        [HttpGet("cpf/{cpf}")]
+        public async Task<ActionResult<IEnumerable<InscricaoResponse>>> PegarPorCpf(string cpf)
+        {
+            var inscricoes = await _inscricaoService.PegarPorCpfAsync(cpf);
+            if (inscricoes == null || !inscricoes.Any())
+            {
+                return NotFound("Nenhuma inscrição encontrada para o CPF informado.");
+            }
+            return Ok(inscricoes);
+        }
+
+        [HttpGet("oferta/{ofertaId}")]
+        public async Task<ActionResult<IEnumerable<InscricaoResponse>>> PegarPorOferta(Guid ofertaId)
+        {
+            var inscricoes = await _inscricaoService.PegarPorOfertaAsync(ofertaId);
+            if (inscricoes == null || !inscricoes.Any())
+            {
+                return NotFound("Nenhuma inscrição encontrada para a oferta informada.");
+            }
+            return Ok(inscricoes);
         }
     }
 }

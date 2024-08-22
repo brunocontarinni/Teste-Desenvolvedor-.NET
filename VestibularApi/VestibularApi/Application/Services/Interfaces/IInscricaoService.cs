@@ -1,8 +1,7 @@
 ﻿using VestibularApi.API.Requests;
 using VestibularApi.API.Responses;
-using VestibularApi.Domain.Entities;
 
-namespace VestibularApi.Application.Services.Inscricao
+namespace VestibularApi.Application.Services.Interfaces
 {
     public interface IInscricaoService
     {
@@ -11,5 +10,7 @@ namespace VestibularApi.Application.Services.Inscricao
         Task<InscricaoResponse> CriarAsync(InscricaoRequest inscricaoRequest);
         Task<InscricaoResponse> AtualizarAsync(Guid id, InscricaoRequest inscricaoRequest);
         Task DeletarAsync(Guid id);
+        Task<IEnumerable<InscricaoResponse>> PegarPorCpfAsync(string cpf);
+        Task<IEnumerable<InscricaoResponse>> PegarPorOfertaAsync(Guid ofertaId);
     }
 }
