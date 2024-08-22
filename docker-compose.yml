@@ -12,12 +12,6 @@ services:
       - sqlserver_data:/var/opt/mssql
     networks:
       - vestibular_network
-    healthcheck:
-      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P VestibularAPI@Passw0rd -Q 'SELECT 1'"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-      start_period: 30s
 
   app:
     image: vestibular_api_image
@@ -27,12 +21,11 @@ services:
     container_name: vestibular_api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=db;Database=VestibularDb;User Id=sa;Password=VestibularAPI@Passw0rd;
+      - ConnectionStrings__DefaultConnection=Server=db;Database=VestibularDb;User Id=sa;Password=VestibularAPI@Passw0rd;TrustServerCertificate=True;
     ports:
       - "8080:8080"
     depends_on:
-      db:
-        condition: service_healthy
+      - db
     networks:
       - vestibular_network
 

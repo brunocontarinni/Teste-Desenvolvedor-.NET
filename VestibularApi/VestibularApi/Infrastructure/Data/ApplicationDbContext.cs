@@ -13,7 +13,7 @@ namespace VestibularApi.Infrastructure.Data
         public DbSet<CandidatoEntities> Candidatos { get; set; }
         public DbSet<InscricaoEntities> Inscricoes { get; set; }
         public DbSet<OfertaEntities> Ofertas { get; set; }
-        public DbSet<LeadEntities> Leads { get; set; }
+        public DbSet<ProcessoSeletivoEntities> ProcessosSeletivos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -31,7 +31,7 @@ namespace VestibularApi.Infrastructure.Data
                 .Property(o => o.Id)
                 .HasDefaultValueSql("NEWID()");
 
-            modelBuilder.Entity<LeadEntities>()
+            modelBuilder.Entity<ProcessoSeletivoEntities>()
                 .Property(l => l.Id)
                 .HasDefaultValueSql("NEWID()");
         }

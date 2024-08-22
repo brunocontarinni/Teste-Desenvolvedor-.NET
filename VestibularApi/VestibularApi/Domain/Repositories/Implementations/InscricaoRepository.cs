@@ -3,47 +3,61 @@ using VestibularApi.Domain.Entities;
 using VestibularApi.Domain.Repositories.Interfaces;
 using VestibularApi.Infrastructure.Data;
 
-
-namespace VestibularApi.Infrastructure.Repositories
+namespace VestibularApi.Domain.Repositories.Implementations
 {
     public class InscricaoRepository : IInscricaoRepository
     {
-        private readonly ApplicationDbContext _contexto;
+        private readonly ApplicationDbContext _context;
 
-        public InscricaoRepository(ApplicationDbContext contexto)
+        public InscricaoRepository(ApplicationDbContext context)
         {
-            _contexto = contexto;
+            _context = context;
         }
 
         public async Task<InscricaoEntities> PegarPorIdAsync(Guid id)
         {
-            return await _contexto.Inscricoes.FindAsync(id);
+            return await _context.Inscricoes.FindAsync(id);
         }
 
         public async Task<IEnumerable<InscricaoEntities>> PegarTodasAsync()
         {
-            return await _contexto.Inscricoes.ToListAsync();
+            return await _context.Inscricoes.ToListAsync();
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorCpfAsync(string cpf)
+        {
+            return await _context.Inscricoes
+                .Include(i => i.Candidato)
+                .Where(i => i.Candidato.CPF == cpf)
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorOfertaAsync(Guid ofertaId)
+        {
+            return await _context.Inscricoes
+                .Where(i => i.OfertaId == ofertaId)
+                .ToListAsync();
         }
 
         public async Task AdicionarAsync(InscricaoEntities inscricao)
         {
-            await _contexto.Inscricoes.AddAsync(inscricao);
-            await _contexto.SaveChangesAsync();
+            _context.Inscricoes.Add(inscricao);
+            await _context.SaveChangesAsync();
         }
 
         public async Task AtualizarAsync(InscricaoEntities inscricao)
         {
-            _contexto.Inscricoes.Update(inscricao);
-            await _contexto.SaveChangesAsync();
+            _context.Inscricoes.Update(inscricao);
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeletarAsync(Guid id)
         {
-            var inscricao = await _contexto.Inscricoes.FindAsync(id);
+            var inscricao = await PegarPorIdAsync(id);
             if (inscricao != null)
             {
-                _contexto.Inscricoes.Remove(inscricao);
-                await _contexto.SaveChangesAsync();
+                _context.Inscricoes.Remove(inscricao);
+                await _context.SaveChangesAsync();
             }
         }
     }

@@ -2,6 +2,7 @@
 using VestibularApi.API.Requests;
 using VestibularApi.API.Responses;
 using VestibularApi.Domain.Repositories.Interfaces;
+using VestibularApi.Application.Services.Interfaces;
 using VestibularApi.Application.Services.Inscricao;
 
 namespace VestibularApi.Application.Services.Implementations
@@ -18,7 +19,17 @@ namespace VestibularApi.Application.Services.Implementations
         public async Task<IEnumerable<InscricaoResponse>> ObterTodasAsync()
         {
             var inscricoes = await _inscricaoRepository.PegarTodasAsync();
-            return inscricoes.Select(i => new InscricaoResponse(i.Id, i.CandidatoId, i.Candidato.Nome, i.OfertaId, i.Oferta.Nome, i.DataInscricao, i.Status));
+            return inscricoes.Select(i => new InscricaoResponse(
+                i.Id,
+                i.NumeroInscricao,
+                i.Data,
+                i.Status,
+                i.ProcessoSeletivoId,
+                i.ProcessoSeletivo?.Nome ?? string.Empty,
+                i.OfertaId,
+                i.Oferta?.Nome ?? string.Empty,
+                i.CandidatoId,
+                i.Candidato?.Nome ?? string.Empty));
         }
 
         public async Task<InscricaoResponse> ObterPorIdAsync(Guid id)
@@ -30,7 +41,17 @@ namespace VestibularApi.Application.Services.Implementations
                 throw new KeyNotFoundException("Inscrição não encontrada.");
             }
 
-            return new InscricaoResponse(inscricao.Id, inscricao.CandidatoId, inscricao.Candidato.Nome, inscricao.OfertaId, inscricao.Oferta.Nome, inscricao.DataInscricao, inscricao.Status);
+            return new InscricaoResponse(
+                inscricao.Id,
+                inscricao.NumeroInscricao,
+                inscricao.Data,
+                inscricao.Status,
+                inscricao.ProcessoSeletivoId,
+                inscricao.ProcessoSeletivo?.Nome ?? string.Empty,
+                inscricao.OfertaId,
+                inscricao.Oferta?.Nome ?? string.Empty,
+                inscricao.CandidatoId,
+                inscricao.Candidato?.Nome ?? string.Empty);
         }
 
         public async Task<InscricaoResponse> CriarAsync(InscricaoRequest inscricaoRequest)
@@ -38,7 +59,14 @@ namespace VestibularApi.Application.Services.Implementations
             if (inscricaoRequest == null)
                 throw new ArgumentNullException(nameof(inscricaoRequest));
 
-            var inscricao = new InscricaoEntities(inscricaoRequest.CandidatoId, inscricaoRequest.OfertaId, inscricaoRequest.DataInscricao, inscricaoRequest.Status);
+            var inscricao = new InscricaoEntities(
+                inscricaoRequest.NumeroInscricao,
+                inscricaoRequest.ProcessoSeletivoId,
+                inscricaoRequest.OfertaId,
+                inscricaoRequest.CandidatoId,
+                inscricaoRequest.DataInscricao,
+                inscricaoRequest.Status);
+
             await _inscricaoRepository.AdicionarAsync(inscricao);
 
             return InscricaoResponse.ConverterEntity(inscricao);
@@ -72,6 +100,16 @@ namespace VestibularApi.Application.Services.Implementations
             }
 
             await _inscricaoRepository.DeletarAsync(id);
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorCPFAsync(string cpf)
+        {
+            return await _inscricaoRepository.PegarPorCpfAsync(cpf);
+        }
+
+        public async Task<IEnumerable<InscricaoEntities>> PegarPorOfertaAsync(Guid ofertaId)
+        {
+            return await _inscricaoRepository.PegarPorOfertaAsync(ofertaId);
         }
     }
 }

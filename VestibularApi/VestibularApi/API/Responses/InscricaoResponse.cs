@@ -6,34 +6,46 @@ namespace VestibularApi.API.Responses
     public class InscricaoResponse
     {
         public Guid Id { get; set; }
-        public Guid CandidatoId { get; set; }
-        public string NomeCandidato { get; set; }
+        public string NumeroInscricao { get; set; }
+        public DateTime Data { get; set; }
+        public StatusInscricao Status { get; set; }
+        public Guid ProcessoSeletivoId { get; set; }
+        public string NomeProcessoSeletivo { get; set; }
         public Guid OfertaId { get; set; }
         public string NomeOferta { get; set; }
-        public DateTime DataInscricao { get; set; }
-        public StatusInscricao Status { get; set; }
+        public Guid CandidatoId { get; set; }
+        public string NomeCandidato { get; set; }
 
-        public InscricaoResponse(Guid id, Guid candidatoId, string nomeCandidato, Guid ofertaId, string nomeOferta, DateTime dataInscricao, StatusInscricao status)
+        public InscricaoResponse(Guid id, string numeroInscricao, DateTime data, StatusInscricao status,
+            Guid processoSeletivoId, string nomeProcessoSeletivo,
+            Guid ofertaId, string nomeOferta,
+            Guid candidatoId, string nomeCandidato)
         {
             Id = id;
-            CandidatoId = candidatoId;
-            NomeCandidato = nomeCandidato;
+            NumeroInscricao = numeroInscricao;
+            Data = data;
+            Status = status;
+            ProcessoSeletivoId = processoSeletivoId;
+            NomeProcessoSeletivo = nomeProcessoSeletivo;
             OfertaId = ofertaId;
             NomeOferta = nomeOferta;
-            DataInscricao = dataInscricao;
-            Status = status;
+            CandidatoId = candidatoId;
+            NomeCandidato = nomeCandidato;
         }
 
         public static InscricaoResponse ConverterEntity(InscricaoEntities inscricao)
         {
             return new InscricaoResponse(
                 inscricao.Id,
-                inscricao.CandidatoId,
-                inscricao.Candidato?.Nome ?? string.Empty, 
+                inscricao.NumeroInscricao,
+                inscricao.Data,
+                inscricao.Status,
+                inscricao.ProcessoSeletivoId,
+                inscricao.ProcessoSeletivo?.Nome ?? string.Empty, 
                 inscricao.OfertaId,
                 inscricao.Oferta?.Nome ?? string.Empty, 
-                inscricao.DataInscricao,
-                inscricao.Status 
+                inscricao.CandidatoId,
+                inscricao.Candidato?.Nome ?? string.Empty
             );
         }
     }

@@ -7,7 +7,6 @@ using VestibularApi.Domain.Repositories.Implementations;
 using VestibularApi.Domain.Repositories.Interfaces;
 using VestibularApi.Application.Services.Inscricao;
 using VestibularApi.Domain.Repositories;
-using VestibularApi.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,8 +30,8 @@ builder.Services.AddScoped<IInscricaoRepository, InscricaoRepository>();
 builder.Services.AddScoped<IOfertaService, OfertaService>();
 builder.Services.AddScoped<IOfertaRepository, OfertaRepository>();
 
-builder.Services.AddScoped<ILeadService, LeadService>();
-builder.Services.AddScoped<ILeadRepository, LeadRepository>();
+builder.Services.AddScoped<IProcessoSeletivoService, ProcessoSeletivoService>();
+builder.Services.AddScoped<IProcessoSeletivoRepository, ProcessoSeletivoRepository>();
 
 
 
