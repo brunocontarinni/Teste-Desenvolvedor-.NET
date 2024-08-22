@@ -1,4 +1,4 @@
-# Teste Desenvolvedor .NET - Aiko
+# Teste Desenvolvedor .NET
 
 Este projeto tem como objetivo demonstrar uma API para fornecer informações sobre inscrições de candidatos em um vestibular. O projeto foi desenvolvido utilizando .NET, seguindo os princípios de arquitetura limpa e aplicando práticas recomendadas de design de software.
 
