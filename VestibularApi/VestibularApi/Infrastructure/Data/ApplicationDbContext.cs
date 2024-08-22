@@ -10,17 +10,29 @@ namespace VestibularApi.Infrastructure.Data
         {
         }
 
-        public DbSet<Candidato> Candidatos { get; set; }
-        public DbSet<Inscricao> Inscricoes { get; set; }
-        public DbSet<Oferta> Ofertas { get; set; }
+        public DbSet<CandidatoEntities> Candidatos { get; set; }
+        public DbSet<InscricaoEntities> Inscricoes { get; set; }
+        public DbSet<OfertaEntities> Ofertas { get; set; }
+        public DbSet<LeadEntities> Leads { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-           
-            modelBuilder.Entity<Candidato>()
+            modelBuilder.Entity<CandidatoEntities>()
                 .Property(c => c.Id)
+                .HasDefaultValueSql("NEWID()");
+
+            modelBuilder.Entity<InscricaoEntities>()
+                .Property(i => i.Id)
+                .HasDefaultValueSql("NEWID()");
+
+            modelBuilder.Entity<OfertaEntities>()
+                .Property(o => o.Id)
+                .HasDefaultValueSql("NEWID()");
+
+            modelBuilder.Entity<LeadEntities>()
+                .Property(l => l.Id)
                 .HasDefaultValueSql("NEWID()");
         }
     }

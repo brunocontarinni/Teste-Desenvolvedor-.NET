@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace VestibularApi.Domain.Entities
 {
-    public class Candidato
+    public class CandidatoEntities
     {
         [Key]
         public Guid Id { get; private set; }
@@ -15,9 +16,15 @@ namespace VestibularApi.Domain.Entities
         [StringLength(11, ErrorMessage = "O CPF deve ter exatamente 11 dígitos")]
         public string CPF { get; private set; }
 
-        protected Candidato() { }
+        [Required]
+        public DateTime DataCriacao { get; private set; }
 
-        public Candidato(string nome, string cpf)
+        protected CandidatoEntities()
+        {
+            DataCriacao = DateTime.Now;
+        }
+
+        public CandidatoEntities(string nome, string cpf)
         {
             if (!ValidarCPF(cpf))
                 throw new ArgumentException("CPF inválido");
@@ -25,6 +32,7 @@ namespace VestibularApi.Domain.Entities
             Id = Guid.NewGuid();
             Nome = nome ?? throw new ArgumentNullException(nameof(nome));
             CPF = cpf;
+            DataCriacao = DateTime.Now;
         }
 
         public void AlterarNome(string novoNome)

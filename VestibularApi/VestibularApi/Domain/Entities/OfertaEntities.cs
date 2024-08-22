@@ -2,7 +2,7 @@
 
 namespace VestibularApi.Domain.Entities
 {
-    public class Oferta
+    public class OfertaEntities
     {
         [Key]
         public Guid Id { get; private set; }
@@ -25,11 +25,11 @@ namespace VestibularApi.Domain.Entities
         [Range(1, int.MaxValue, ErrorMessage = "O número de vagas disponíveis deve ser maior que zero.")]
         public int VagasDisponiveis { get; private set; }
 
-        public Oferta()
+        public OfertaEntities()
         {
         }
 
-        public Oferta(string nome, string descricao, DateTime dataInicio, DateTime dataFim, int vagasDisponiveis)
+        public OfertaEntities(string nome, string descricao, DateTime dataInicio, DateTime dataFim, int vagasDisponiveis)
         {
             Id = Guid.NewGuid();
             Nome = nome;

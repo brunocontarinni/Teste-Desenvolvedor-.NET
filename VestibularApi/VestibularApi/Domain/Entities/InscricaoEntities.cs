@@ -1,9 +1,8 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace VestibularApi.Domain.Entities
 {
-    public class Inscricao
+    public class InscricaoEntities
     {
         [Key]
         public Guid Id { get; private set; }
@@ -20,14 +19,14 @@ namespace VestibularApi.Domain.Entities
         [Required]
         public StatusInscricao Status { get; private set; }
 
-        public virtual Candidato Candidato { get; private set; }
-        public virtual Oferta Oferta { get; private set; }
+        public virtual CandidatoEntities Candidato { get; private set; }
+        public virtual OfertaEntities Oferta { get; private set; }
 
-        public Inscricao()
+        public InscricaoEntities()
         {
         }
 
-        public Inscricao(Guid candidatoId, Guid ofertaId, DateTime dataInscricao, StatusInscricao status)
+        public InscricaoEntities(Guid candidatoId, Guid ofertaId, DateTime dataInscricao, StatusInscricao status)
         {
             Id = Guid.NewGuid();
             CandidatoId = candidatoId;

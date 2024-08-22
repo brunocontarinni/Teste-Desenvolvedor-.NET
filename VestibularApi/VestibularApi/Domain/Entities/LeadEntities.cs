@@ -1,9 +1,8 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace VestibularApi.Domain.Entities
 {
-    public class Lead
+    public class LeadEntities
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -24,13 +23,21 @@ namespace VestibularApi.Domain.Entities
         [StringLength(11, ErrorMessage = "O CPF deve conter 11 caracteres.")]
         public string CPF { get; set; }
 
-        public ICollection<Inscricao> Inscricoes { get; set; } = new List<Inscricao>();
+        public ICollection<InscricaoEntities> Inscricoes { get; set; } = new List<InscricaoEntities>();
 
-        public Lead()
+        public LeadEntities()
         {
         }
 
-        public Lead(string nome, string email, string telefone, string cpf)
+        public LeadEntities(string nome, string email, string telefone, string cpf)
+        {
+            Nome = nome;
+            Email = email;
+            Telefone = telefone;
+            CPF = cpf;
+        }
+
+        public void Atualizar(string nome, string email, string telefone, string cpf)
         {
             Nome = nome;
             Email = email;
