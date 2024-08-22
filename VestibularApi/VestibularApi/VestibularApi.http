@@ -1,0 +1,29 @@
+@VestibularApi_HostAddress = http://localhost:5228
+### Requisição para o endpoint GET de candidatos
+GET {{VestibularApi_HostAddress}}/api/candidatos
+Accept: application/json
+
+### Requisição para o endpoint POST de criação de candidato
+POST {{VestibularApi_HostAddress}}/api/candidatos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "João Silva",
+  "cpf": "12345678900"
+}
+
+### Requisição para o endpoint PUT de atualização de candidato
+PUT {{VestibularApi_HostAddress}}/api/candidatos/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nome": "João da Silva",
+  "cpf": "12345678900"
+}
+
+### Requisição para o endpoint DELETE de candidato
+DELETE {{VestibularApi_HostAddress}}/api/candidatos/1
+Accept: application/json
+###

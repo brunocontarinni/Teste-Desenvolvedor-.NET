@@ -1,79 +1,53 @@
 # Teste Desenvolvedor .NET
 
-![Aiko](imagens/logocrm.png)
+Este projeto tem como objetivo demonstrar uma API para fornecer informações sobre inscrições de candidatos em um vestibular. O projeto foi desenvolvido utilizando .NET, seguindo os princípios de arquitetura limpa e aplicando práticas recomendadas de design de software.
 
-Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .NET.
+## Arquitetura
 
-## O Desafio
+### Camadas do Projeto
 
-O desafio é criar um servidor que provê uma API com o objetivo de fornecer informações sobre Inscrições de candidatos de um vestibular
+O projeto segue uma arquitetura em camadas, com separação clara entre as responsabilidades:
 
-## Requisitos
-
-Esses requisitos são obrigatórios e devem ser desenvolvidos para a entrega do teste
-
-### CRUD
-
-Implementar as operações de **criação (POST)**, **consulta (GET)** (Por Id e GetAll), **atualização (PUT)** e **exclusão (DELETE)** de todas as entidades do seguinte diagrama:
-
-!['D](imagens/backend_diagrama.png)
-
-### Métodos
-
-Após implementar o CRUD para as entidades, implemente os seguintes métodos:
-
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF.
-
-* `Inscrições por Oferta`: Recebe o identificador de uma oferta e retorna as inscrições associados aquela oferta.
-
-## O que é permitido
-
-* Linguagem C#
-
-* .NET Framework ou .NET Core ou .NET 5
-
-* PostgreSQL, MySQL, Oracle, etc
-
-* Mapeamento objeto-relacional (ORM)
-
-* Qualquer tecnologia complementar as citadas anteriormente são permitidas desde que seu uso seja justificável
-
-## O que não é permitido
-
-* Bancos de Dados **não relacionais**.
+- **Domain**: Esta camada contém as entidades e regras de negócio do domínio, bem como os contratos (interfaces) dos repositórios. A lógica central de negócios está completamente isolada do restante da aplicação.
   
-* Utilizar bibliotecas ou códigos de terceiros que implementem algum dos requisitos.
+- **Application**: Esta camada contém os serviços que implementam a lógica de aplicação. Os serviços orquestram o fluxo de dados entre a camada de domínio e a camada de infraestrutura.
 
-* Outras linguagens diferentes de C#
+- **Infrastructure**: Esta camada contém a implementação de persistência de dados e outras dependências externas, como o Entity Framework Core para comunicação com o banco de dados.
 
-## Recomendações
-* O teste é propositalmente simples para permitir que você demostre suas habilidades e conhecimentos sem escrever muito código, sendo assim é interessante utilizar design patters e padrões de arquitetura.
-* **Linter**: Desenvolva o projeto utilizando algum padrão de formatação de código.
+- **API**: A camada de interface expõe os endpoints REST para interagir com as funcionalidades da aplicação, como o CRUD de entidades, além de consultas específicas, como inscrições por CPF ou por oferta. Esta camada utiliza o ASP.NET Core.
 
-## Extras
+### Princípios Utilizados
 
-Aqui são listados algumas sugestões para você que quer ir além do desafio inicial. Lembrando que você não precisa se limitar a essas sugestões, se tiver pensado em outra funcionalidade que considera relevante ao escopo da aplicação fique à vontade para implementá-la.
+- **SOLID**: 
+  - **Single Responsibility Principle (SRP)**: Cada classe tem uma única responsabilidade. Por exemplo, o `InscricaoService` é responsável apenas pela lógica de inscrição, enquanto os repositórios lidam exclusivamente com a persistência de dados.
+  - **Open/Closed Principle (OCP)**: O sistema foi projetado para ser aberto para extensão, mas fechado para modificação, facilitando a adição de novas funcionalidades sem alterar o comportamento existente.
+  - **Dependency Inversion Principle (DIP)**: As classes de serviço dependem de abstrações, e não de implementações concretas, promovendo flexibilidade e testabilidade.
 
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF, juntamente com dados imporrtantes para identificar de qual processo seletivo cada uma pertence.
+- **Domain-Driven Design (DDD)**: A lógica de negócios está centralizada nas entidades de domínio. Por exemplo, a entidade `InscricaoEntities` contém toda a lógica relacionada à inscrição, como a atualização de status.
 
-* **Documentação**: Gerar a documentação da API de forma automatizada, utilizando o `swagger` ou equivalentes
+- **Clean Architecture**: 
+  - O projeto está organizado para que a lógica de negócios esteja isolada das camadas de infraestrutura, facilitando a manutenção e a escalabilidade da aplicação.
+  - A camada de aplicação não conhece detalhes de persistência, e vice-versa, promovendo um alto nível de desacoplamento.
 
-* **Containerização**: Realizar a conteinerização da aplicação utilizando Docker
+## Containerização com Docker e Docker Compose
 
-* **Front-end da aplicação**: Se seu foco é ser fullstack, você pode explorar isso desenvolvendo um front-end para a aplicação, seja em tecnologia .NET (MVC, Razor, Blazor) ou javacript (VueJS, Angular, ReactJS, etc.)
+### Dockerfile
 
-## Entregas
+O projeto foi containerizado utilizando Docker. O `Dockerfile` define as instruções para construir a imagem da API .NET. Aqui estão as etapas principais:
 
-Para realizar a entrega do teste você deve:
+1. **Imagem Base**: Usa a imagem oficial do .NET 8.0 para o ambiente de execução e o SDK para compilação.
+2. **Build**: A aplicação é compilada e publicada em uma pasta específica.
+3. **Imagem Final**: Uma nova imagem é criada com o ambiente de runtime para rodar a aplicação a partir dos artefatos gerados na etapa de build.
 
-* Relizar o fork e clonar esse repositório para sua máquina
+### Docker Compose
+
+O `docker-compose.yml` foi utilizado para orquestrar os containers da aplicação e do banco de dados SQL Server. Aqui estão as principais configurações:
+
+- **Serviço de Banco de Dados (`db`)**: Utiliza a imagem do SQL Server 2022 e define as variáveis de ambiente, como usuário e senha. Além disso, expõe a porta 1433 para permitir a conexão.
   
-* Criar uma branch com o nome de `teste/[SEU NOME]`
-  * `[SEU NOME]`: Seu nome
-  * Exemplo: `teste/fulano-da-silva`;
-  
-* Faça um commit da sua branch com a implementação do teste
-  
-* Realize o pull request da sua branch nesse repositório
+- **Serviço da API (`app`)**: Define a imagem da API .NET gerada pelo Dockerfile, mapeia a porta 8080 para a máquina local e define a dependência do banco de dados, garantindo que a API só seja inicializada após o banco estar disponível.
 
-Além do pull request você deve **gravar um vídeo de no máximo 30 minutos** mostrando o que foi desenvolvido, falando sobre as decisões que foram tomadas, as tecnologias utilizadas, arquitetura e tudo que você achar relevante. A facecam é opcional, mas é um extra desejável. Esse vídeo deve ser postado no youtube (pode ser não listado) e seu link deve estar no `README.md` do projeto.
+Com o Docker Compose, a aplicação pode ser facilmente inicializada executando o comando:
+
+```bash
+docker-compose up --build

@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: vestibular_sqlserver_db
+    environment:
+      SA_PASSWORD: "VestibularAPI@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - vestibular_network
+
+  app:
+    image: vestibular_api_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vestibular_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=db;Database=VestibularDb;User Id=sa;Password=VestibularAPI@Passw0rd;TrustServerCertificate=True;
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - vestibular_network
+
+volumes:
+  sqlserver_data:
+
+networks:
+  vestibular_network:
+    driver: bridge

@@ -1,0 +1,43 @@
+# Ignore arquivos gerados pela build
+[Bb]in/
+[Oo]bj/
+
+# Logs
+*.log
+*.tlog
+*.log.*
+
+# Ignore arquivos de configuração de IDEs
+.vscode/
+.idea/
+.vs/
+
+# Ignore pacotes NuGet
+*.nupkg
+**/[Pp]ackages/
+!**/[Pp]ackages/build/
+
+
+# Ignore diretórios de publicação
+publish/
+out/
+
+# Ignore arquivos de usuários específicos do Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configurações de banco de dados local
+appsettings.Development.json
+appsettings.Test.json
+
+
+# Dotnet watch auto-reload temp files
+.dotnet-watch.json
+
+# Runtimes locais do Entity Framework
+Migrations/
+
+# Ignore arquivos Docker 
+docker-compose.override.yml
