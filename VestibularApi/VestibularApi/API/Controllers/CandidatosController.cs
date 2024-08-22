@@ -26,7 +26,7 @@ namespace VestibularApi.API.Controllers
 
             var response = new CandidatoResponse
             {
-                Id = candidato.Id, // UUID aqui
+                Id = candidato.Id,
                 Nome = candidato.Nome,
                 CPF = candidato.CPF
             };
