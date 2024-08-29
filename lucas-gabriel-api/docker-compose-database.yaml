@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "lsbrel-teste"
+      POSTGRES_DB: "lsbrel-db"
+    ports:
+      - "5432:5432"
+    container_name: lsbrel-container-teste
+    volumes:
+      - ./InitDB.sql:/docker-entrypoint-initdb.d/InitDB.sql
+
+    networks:
+      - shared-net
+
+networks:
+  shared-net:
