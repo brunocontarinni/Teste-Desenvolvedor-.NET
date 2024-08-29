@@ -1,0 +1,15 @@
+services:
+  lsbrel-api:
+    image: dotnet6
+    build:
+      dockerfile: ./dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=lsbrel-db;Username=postgres;Password=lsbrel-teste;
+    networks:
+      - shared-net
+
+networks:
+  shared-net:
