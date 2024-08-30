@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Teste_CRM_EDUCACIONAL.props" />
+</Project>
