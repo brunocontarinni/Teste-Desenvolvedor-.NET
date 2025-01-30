@@ -12,7 +12,7 @@ namespace Infrastructure.HealthChecks
 
         public DatabaseHealthCheck(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("DefaultConnection") + ";Timeout=5";
         }
 
         public async Task<HealthCheckResult> CheckHealthAsync(
@@ -22,6 +22,13 @@ namespace Infrastructure.HealthChecks
             {
                 using var connection = new NpgsqlConnection(_connectionString);
                 await connection.OpenAsync(cancellationToken);
+
+                using var command = new NpgsqlCommand("SELECT 1", connection)
+                {
+                    CommandTimeout = 5
+                };
+
+                await command.ExecuteNonQueryAsync(cancellationToken);
                 return HealthCheckResult.Healthy("Up");
             }
             catch (Exception ex)
