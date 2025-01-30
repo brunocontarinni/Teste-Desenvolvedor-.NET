@@ -63,7 +63,7 @@ namespace API
             
             app.UseMiddleware<GlobalExceptionMiddleware>();
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
