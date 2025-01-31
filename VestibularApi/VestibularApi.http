@@ -1,0 +1,6 @@
+@VestibularApi_HostAddress = http://localhost:5090
+
+GET {{VestibularApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
