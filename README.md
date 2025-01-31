@@ -1,79 +1,77 @@
-# Teste Desenvolvedor .NET
+# Projeto: API de Inscrições para Vestibular
 
-![Aiko](imagens/logocrm.png)
+## Descrição
+Este projeto consiste em uma API desenvolvida em **C# com ASP.NET Core** para gerenciar inscrições de candidatos em um vestibular. A API permite a gestão de **candidatos, processos seletivos, ofertas de cursos e inscrições**, garantindo a integridade dos dados e o gerenciamento eficiente das informações.
 
-Neste teste serão avaliados seus conhecimentos e a metodologia aplicada no desenvolvimento de uma aplicação .NET.
+A API foi projetada para ser escalável e de fácil integração com sistemas externos, oferecendo endpoints RESTful para operações CRUD e consultas personalizadas.
 
-## O Desafio
+## Tecnologias Utilizadas
+- **C# .NET 8.0**
+- **ASP.NET Core**
+- **Entity Framework Core**
+- **SQL Server**
+- **Swagger (Swashbuckle)** para documentação da API
+- **Postman** para testes e documentação adicional
 
-O desafio é criar um servidor que provê uma API com o objetivo de fornecer informações sobre Inscrições de candidatos de um vestibular
+## Funcionalidades
+- **Gerenciamento de Candidatos**: Cadastro e consulta de candidatos.
+- **Processos Seletivos**: Controle de datas de início e término.
+- **Ofertas de Cursos**: Registros de cursos e suas respectivas vagas.
+- **Inscrições**: Registro de inscrições, verificação de status e filtragem por CPF.
 
-## Requisitos
+## Endpoints Principais
 
-Esses requisitos são obrigatórios e devem ser desenvolvidos para a entrega do teste
+### Candidatos
+- `POST /api/Lead` - Cadastrar um novo candidato.
+- `GET /api/Lead` - Listar todos os candidatos.
+- `GET /api/Lead/{id}` - Buscar um candidato pelo ID.
+- `PUT /api/Lead/{id}` - Atualizar informações de um candidato.
+- `DELETE /api/Lead/{id}` - Remover um candidato.
 
-### CRUD
+### Ofertas
+- `POST /api/Oferta` - Cadastrar uma nova oferta.
+- `GET /api/Oferta` - Listar todas ofertas.
+- `GET /api/Oferta/{id}` - Buscar uma oferta pelo ID.
+- `PUT /api/Oferta/{id}` - Atualizar informações de uma oferta.
+- `DELETE /api/Oferta/{id}` - Remover uma oferta.
 
-Implementar as operações de **criação (POST)**, **consulta (GET)** (Por Id e GetAll), **atualização (PUT)** e **exclusão (DELETE)** de todas as entidades do seguinte diagrama:
+### Processos Seletivos
+- `POST /api/ProcessoSeletivo` - Criar um novo processo seletivo.
+- `GET /api/ProcessoSeletivo` - Listar todos os processos seletivos.
+- `GET /api/ProcessoSeletivo/{id}` - Buscar um processo seletivo pelo ID.
+- `PUT /api/ProcessoSeletivo/{id}` - Atualizar um processo seletivo.
+- `DELETE /api/ProcessoSeletivo/{id}` - Remover um processo seletivo.
 
-!['D](imagens/backend_diagrama.png)
+### Inscrições
+- `POST /api/Inscricao` - Realizar uma nova inscrição.
+- `GET /api/Inscricao` - Listar todas as inscrições.
+- `GET /api/Inscricao/{id}` - Buscar uma inscrição pelo ID.
+- `GET /api/Inscricao/cpf/{cpf}` - Buscar inscrições de um candidato pelo CPF.
+- `GET /api/Inscricao/oferta/{id}`- Buscar inscrições relacionadas a uma oferta.
+- `PUT /api/Inscricao/{id}` - Alterar o status da inscrição
+- `DELETE /api/Inscricao/{id}` - Cancelar uma inscrição.
 
-### Métodos
+## Como Executar o Projeto
+1. **Clonar o Repositório**
+   ```bash
+   git clone https://github.com/bielaugusto/VestibularApi.git
+   ```
 
-Após implementar o CRUD para as entidades, implemente os seguintes métodos:
+2. **Configurar o Banco de Dados**
+   - Atualizar a string de conexão no `appsettings.json`.
+   - Executar as migrações do Entity Framework:
+     ```bash
+     dotnet ef database update
+     ```
 
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF.
+3. **Executar a API**
+   ```bash
+   dotnet run
+   ```
 
-* `Inscrições por Oferta`: Recebe o identificador de uma oferta e retorna as inscrições associados aquela oferta.
+## Link para Explicação do Projeto
+[Explicação Detalhada](https://youtu.be/P2c4K0iUiJA)
 
-## O que é permitido
+## Link para a Documentação da API
+[Documentação Adicional](https://documenter.getpostman.com/view/29694328/2sAYX2Nj9e#77f229b3-9a47-487d-8669-d1b8c17af7ce)
 
-* Linguagem C#
-
-* .NET Framework ou .NET Core ou .NET 5
-
-* PostgreSQL, MySQL, Oracle, etc
-
-* Mapeamento objeto-relacional (ORM)
-
-* Qualquer tecnologia complementar as citadas anteriormente são permitidas desde que seu uso seja justificável
-
-## O que não é permitido
-
-* Bancos de Dados **não relacionais**.
-  
-* Utilizar bibliotecas ou códigos de terceiros que implementem algum dos requisitos.
-
-* Outras linguagens diferentes de C#
-
-## Recomendações
-* O teste é propositalmente simples para permitir que você demostre suas habilidades e conhecimentos sem escrever muito código, sendo assim é interessante utilizar design patters e padrões de arquitetura.
-* **Linter**: Desenvolva o projeto utilizando algum padrão de formatação de código.
-
-## Extras
-
-Aqui são listados algumas sugestões para você que quer ir além do desafio inicial. Lembrando que você não precisa se limitar a essas sugestões, se tiver pensado em outra funcionalidade que considera relevante ao escopo da aplicação fique à vontade para implementá-la.
-
-* `Inscrições por CPF`: Implementar um método que recebe um CPF como parâmetro e retorna TODAS inscrições vinculadas aquele CPF, juntamente com dados imporrtantes para identificar de qual processo seletivo cada uma pertence.
-
-* **Documentação**: Gerar a documentação da API de forma automatizada, utilizando o `swagger` ou equivalentes
-
-* **Containerização**: Realizar a conteinerização da aplicação utilizando Docker
-
-* **Front-end da aplicação**: Se seu foco é ser fullstack, você pode explorar isso desenvolvendo um front-end para a aplicação, seja em tecnologia .NET (MVC, Razor, Blazor) ou javacript (VueJS, Angular, ReactJS, etc.)
-
-## Entregas
-
-Para realizar a entrega do teste você deve:
-
-* Relizar o fork e clonar esse repositório para sua máquina
-  
-* Criar uma branch com o nome de `teste/[SEU NOME]`
-  * `[SEU NOME]`: Seu nome
-  * Exemplo: `teste/fulano-da-silva`;
-  
-* Faça um commit da sua branch com a implementação do teste
-  
-* Realize o pull request da sua branch nesse repositório
-
-Além do pull request você deve **gravar um vídeo de no máximo 30 minutos** mostrando o que foi desenvolvido, falando sobre as decisões que foram tomadas, as tecnologias utilizadas, arquitetura e tudo que você achar relevante. A facecam é opcional, mas é um extra desejável. Esse vídeo deve ser postado no youtube (pode ser não listado) e seu link deve estar no `README.md` do projeto.
