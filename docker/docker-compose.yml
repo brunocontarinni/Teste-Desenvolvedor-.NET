@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  postgres_db:
+    image: postgres:16
+    container_name: postgres_db
+    restart: on-failure
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: G3#vB9@xYz!78dK
+      POSTGRES_DB: VestibularDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+
+  api:
+    container_name: api-vestibular
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8098:8098"
+      - "8099:8099"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - postgres_db
+    restart: on-failure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8098/health"]
+      interval: 10s
+      timeout: 5s
